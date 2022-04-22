@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         PlayerMovement();
     }
@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         PlayerInput();
         transform.position += moveVector.normalized * playerSpeed * Time.deltaTime;
+        //GetComponent<Rigidbody2D>().MovePosition(new Vector3((transform.position.x + moveVector.x * playerSpeed * Time.deltaTime), (transform.position.y + moveVector.y * playerSpeed * Time.deltaTime), 0));
     }
 
 }
