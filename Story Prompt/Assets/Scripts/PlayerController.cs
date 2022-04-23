@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float shootingDelay = 0.4f;
     float shootingTimer = 0;
+    public Vector3 offsetVector = new Vector3(0, 0.1f, 0);
     #endregion
 
 
@@ -24,7 +25,7 @@ public class PlayerController : MonoBehaviour
     #region Other Class Components
     [SerializeField]
     Projectile projectile;
-    Vector3 projectileMoveVector;
+    public Vector3 projectileMoveVector;
     #endregion
 
     [HideInInspector]
@@ -39,7 +40,10 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         PlayerMovement();
-        PlayerShootInput();
+
+        projectileMoveVector= Vector3.zero;
+        playerAnim.SetFloat("Shoot", projectileMoveVector.sqrMagnitude);
+        if (moveVector == Vector3.zero) PlayerShootInput();
     }
 
     void PlayerMovementInput()
@@ -69,12 +73,29 @@ public class PlayerController : MonoBehaviour
     {
         projectileMoveVector.x = Input.GetAxisRaw("Horizontal");
         projectileMoveVector.y = Input.GetAxisRaw("Vertical");
-        if (Time.time - shootingTimer > shootingDelay)
+
+        playerAnim.SetFloat("ShootX", projectileMoveVector.x);
+        playerAnim.SetFloat("ShootY", projectileMoveVector.y);
+        playerAnim.SetFloat("Shoot", projectileMoveVector.sqrMagnitude);
+
+        if (projectileMoveVector.sqrMagnitude > 0)
         {
-            shootingTimer = Time.time;
-            projectile.moveVector = projectileMoveVector.normalized;
-            Instantiate(projectile.gameObject, transform.position, transform.rotation);
+            if (Time.time - shootingTimer > shootingDelay)
+            {
+                shootingTimer = Time.time;
+                projectile.moveVector = projectileMoveVector.normalized;
+
+                if (projectileMoveVector.x == 0 && projectileMoveVector.y == 1) Instantiate(projectile.gameObject, transform.position - offsetVector, Quaternion.Euler(0, 0, 0));
+                else if (projectileMoveVector.x == 1 && projectileMoveVector.y == 0) Instantiate(projectile.gameObject, transform.position - offsetVector, Quaternion.Euler(0, 0, -90));
+                else if (projectileMoveVector.x == 1 && projectileMoveVector.y == 1) Instantiate(projectile.gameObject, transform.position - offsetVector, Quaternion.Euler(0, 0, -45));
+                else if (projectileMoveVector.x == 0 && projectileMoveVector.y == -1) Instantiate(projectile.gameObject, transform.position - offsetVector, Quaternion.Euler(0, 0, 180));
+                else if (projectileMoveVector.x == -1 && projectileMoveVector.y == 0) Instantiate(projectile.gameObject, transform.position - offsetVector, Quaternion.Euler(0, 0, 90));
+                else if (projectileMoveVector.x == -1 && projectileMoveVector.y == -1) Instantiate(projectile.gameObject, transform.position - offsetVector, Quaternion.Euler(0, 0, 135));
+                else if (projectileMoveVector.x == -1 && projectileMoveVector.y == 1) Instantiate(projectile.gameObject, transform.position - offsetVector, Quaternion.Euler(0, 0, 45));
+                else if (projectileMoveVector.x == 1 && projectileMoveVector.y == -1) Instantiate(projectile.gameObject, transform.position - offsetVector, Quaternion.Euler(0, 0, -135));
+            }
         }
+        
     }
 
 }

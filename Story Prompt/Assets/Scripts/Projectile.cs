@@ -7,8 +7,12 @@ public class Projectile : MonoBehaviour
 
     public SpriteRenderer sprite;
     public float projectileSpeed = 5f;
+    public float projectileTimer = 2f;
     public Vector3 moveVector;
-
+    private void Start()
+    {
+        Invoke("DestroyProjectile", projectileTimer);
+    }
     private void Update()
     {
         MoveProjectile();
@@ -16,7 +20,12 @@ public class Projectile : MonoBehaviour
 
     void MoveProjectile()
     {
-        transform.position += moveVector * Time.deltaTime * projectileSpeed;
+        GetComponent<Rigidbody2D>().velocity = moveVector * Time.deltaTime * projectileSpeed * 100;
+    }
+
+    void DestroyProjectile()
+    {
+        Destroy(gameObject);
     }
 
 }

@@ -24,6 +24,7 @@ public class Dialog : MonoBehaviour
             GetComponent<CapsuleCollider2D>().enabled = false;
             playerController = collision.gameObject.GetComponent<PlayerController>();
             playerController.moveVector = Vector3.zero;
+            playerController.projectileMoveVector = Vector3.zero;
             playerController.playerAnim.SetBool("Dialog", true);
             playerController.enabled = false;
         }
