@@ -9,12 +9,24 @@ public class PlayerController : MonoBehaviour
     float playerSpeed = 5f;
     #endregion
 
+    #region Shooting Variables
+    [SerializeField]
+    float shootingDelay = 0.4f;
+    float shootingTimer = 0;
+    #endregion
+
 
     #region Player Components
     [HideInInspector]
     public Animator playerAnim;
     #endregion
-    
+
+    #region Other Class Components
+    [SerializeField]
+    Projectile projectile;
+    Vector3 projectileMoveVector;
+    #endregion
+
     [HideInInspector]
     public Vector3 moveVector;
     // Start is called before the first frame update
@@ -27,6 +39,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         PlayerMovement();
+        PlayerShootInput();
     }
 
     void PlayerMovementInput()
@@ -54,7 +67,14 @@ public class PlayerController : MonoBehaviour
 
     void PlayerShootInput()
     {
-
+        projectileMoveVector.x = Input.GetAxisRaw("Horizontal");
+        projectileMoveVector.y = Input.GetAxisRaw("Vertical");
+        if (Time.time - shootingTimer > shootingDelay)
+        {
+            shootingTimer = Time.time;
+            projectile.moveVector = projectileMoveVector.normalized;
+            Instantiate(projectile.gameObject, transform.position, transform.rotation);
+        }
     }
 
 }
