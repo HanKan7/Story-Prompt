@@ -12,13 +12,20 @@ public class Dialog : MonoBehaviour
     public GameObject continueButton;
     int index = 0;
 
+    PlayerController playerController;
+    public float enablePlayerControllerTimer = 0.5f;
+    public float enableColliderTimer = 5f;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
             StartCoroutine(PrintDialog());
             GetComponent<CapsuleCollider2D>().enabled = false;
-            //collision.gameObject.GetComponent<PlayerController>().enabled = false;
+            playerController = collision.gameObject.GetComponent<PlayerController>();
+            playerController.moveVector = Vector3.zero;
+            playerController.playerAnim.SetBool("Dialog", true);
+            playerController.enabled = false;
         }
     }
 
@@ -54,7 +61,21 @@ public class Dialog : MonoBehaviour
             dialogText.text = "";
             continueButton.SetActive(false);
             index = 0;
-            GetComponent<CapsuleCollider2D>().enabled = true;
+            StartCoroutine(EnablePlayerController());
+            StartCoroutine(EnableCollider());
         }
+    }
+    IEnumerator EnablePlayerController()
+    {
+        yield return new WaitForSeconds(enablePlayerControllerTimer);
+        playerController.enabled = true;
+        playerController.playerAnim.SetBool("Dialog", false);
+    }
+
+
+    IEnumerator EnableCollider()
+    {
+        yield return new WaitForSeconds(enableColliderTimer);
+        GetComponent<CapsuleCollider2D>().enabled = true;
     }
 }

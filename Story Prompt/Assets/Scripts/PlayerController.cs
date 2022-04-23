@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    #region Player Variables
     [SerializeField]
     float playerSpeed = 5f;
+    #endregion
 
-    Vector3 moveVector;
+
+    #region Player Components
+    [HideInInspector]
+    public Animator playerAnim;
+    #endregion
+    
+    [HideInInspector]
+    public Vector3 moveVector;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,7 +29,7 @@ public class PlayerController : MonoBehaviour
         PlayerMovement();
     }
 
-    void PlayerInput()
+    void PlayerMovementInput()
     {
         //Movement X Axis
         if (Input.GetKey(KeyCode.A)) moveVector.x = -1;
@@ -31,13 +40,21 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.W)) moveVector.y = 1;
         else if (Input.GetKey(KeyCode.S)) moveVector.y = -1;
         else moveVector.y = 0;
+
+        playerAnim.SetFloat("Horizontal", moveVector.x);
+        playerAnim.SetFloat("Vertical", moveVector.y);
+        playerAnim.SetFloat("Speed", moveVector.sqrMagnitude);
     }
 
     void PlayerMovement()
     {
-        PlayerInput();
+        PlayerMovementInput();
         transform.position += moveVector.normalized * playerSpeed * Time.deltaTime;
-        //GetComponent<Rigidbody2D>().MovePosition(new Vector3((transform.position.x + moveVector.x * playerSpeed * Time.deltaTime), (transform.position.y + moveVector.y * playerSpeed * Time.deltaTime), 0));
+    }
+
+    void PlayerShootInput()
+    {
+
     }
 
 }

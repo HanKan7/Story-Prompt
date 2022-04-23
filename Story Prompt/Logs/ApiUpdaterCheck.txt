@@ -1,0 +1,10 @@
+[api-updater (non-obsolete-error-filter)] 4/22/2022 7:30:09 PM : Starting C:/Hanu/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 571.9404ms
+moved types parse time: 39ms
+candidates parse time : 0ms
+C# parse time         : 475ms
+candidates check time : 23ms
+console write time    : 0ms
+
