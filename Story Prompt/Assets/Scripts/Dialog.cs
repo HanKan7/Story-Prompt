@@ -35,6 +35,10 @@ public class Dialog : MonoBehaviour
         if(dialogText.text == dialogs[index])
         {
             continueButton.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                NextSentence();
+            }
         } 
     }
 
