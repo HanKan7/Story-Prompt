@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     public Vector3 offsetVector = new Vector3(0, 0.1f, 0);
     #endregion
 
+    #region Player Children
+    public ParticleSystem dustParticles;
+    #endregion
 
     #region Player Components
     [HideInInspector]
@@ -61,6 +64,8 @@ public class PlayerController : MonoBehaviour
         playerAnim.SetFloat("Horizontal", moveVector.x);
         playerAnim.SetFloat("Vertical", moveVector.y);
         playerAnim.SetFloat("Speed", moveVector.sqrMagnitude);
+
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) CreateParticles();
     }
 
     void PlayerMovement()
@@ -96,6 +101,11 @@ public class PlayerController : MonoBehaviour
             }
         }
         
+    }
+
+    void CreateParticles()
+    {
+        dustParticles.Play();
     }
 
 }
