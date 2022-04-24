@@ -10158,7 +10158,7 @@ MonoBehaviour:
     targetBuilding: {fileID: 396602410}
   enemyPrefab: {fileID: 5773969473295684726, guid: 6df018abe758f04449ab3733191cbc15,
     type: 3}
-  numberOfEnemies: 0
+  numberOfEnemies: 5
   spawnEnemyTime: 2
   enemySpawning: 1
   dialoguing: 0

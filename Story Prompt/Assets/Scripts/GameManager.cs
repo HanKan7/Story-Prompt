@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject enemyPrefab;
 
     public int numberOfEnemies;
+    int enemyCount = 0;
     public float spawnEnemyTime = 2;
     float spawnTimeCount = 0;
 
@@ -23,7 +24,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemySpawning && ! dialoguing) {
+        if (enemySpawning && ! dialoguing && enemyCount < numberOfEnemies) {
             SpawnEnemy();     
         }
 
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
                 tempEnemy.path = paths[i].enemyPath;
                 tempEnemy.targetBuilding = paths[i].targetBuilding;
             }
+            enemyCount++;
             spawnTimeCount = 0;
         }
     }
