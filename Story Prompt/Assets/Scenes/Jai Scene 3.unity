@@ -4364,7 +4364,7 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[2]
-      value: <s>It must be hard</s>
+      value: <s>It must be hard</s> nevermind
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851796, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
@@ -10073,7 +10073,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 4
+  shootingDelay: 0.4
+  offsetVector: {x: 0, y: 0.1, z: 0}
   playerAnim: {fileID: 0}
+  projectile: {fileID: 0}
+  projectileMoveVector: {x: 0, y: 0, z: 0}
   moveVector: {x: 0, y: 0, z: 0}
 --- !u!212 &1827203170
 SpriteRenderer:
