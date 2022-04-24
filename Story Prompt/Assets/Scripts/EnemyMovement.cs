@@ -18,27 +18,28 @@ public class EnemyMovement : MonoBehaviour
     public int damage = 2;
 
     public GameObject targetBuilding;
-    
+    GameManager gameManager;
    
 
     // Start is called before the first frame update
     void Start()
     {
         //transform.position = pathNodes[0].position;
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!attacking)
-        {
-            approachBuilding();
+        if (gameManager.dialoguing == false) { 
+            if (!attacking)
+            {
+                approachBuilding();
+            }
+            else {
+                attackBuilding();
+            }
         }
-        else {
-            attackBuilding();
-        }
-
-
     }
 
     void approachBuilding() {

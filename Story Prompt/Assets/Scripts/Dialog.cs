@@ -19,7 +19,7 @@ public class Dialog : MonoBehaviour
 
     bool canDialogue = false;
     bool dialoguing = false;
-
+    GameManager gameManager;
     private void OnTriggerEnter2D(Collider2D collision)
     {/*
         if(collision.gameObject.tag == "Player")
@@ -33,6 +33,11 @@ public class Dialog : MonoBehaviour
         }*/
         playerController = collision.gameObject.GetComponent<PlayerController>();
         canDialogue = true;
+    }
+
+    private void Start()
+    {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     private void Update()
@@ -51,6 +56,7 @@ public class Dialog : MonoBehaviour
             playerController.moveVector = Vector3.zero;
             playerController.playerAnim.SetBool("Dialog", true);
             playerController.enabled = false;
+            gameManager.dialoguing = true;
         }
 
         if (dialoguing && Input.GetKeyDown(KeyCode.Space))
@@ -89,6 +95,7 @@ public class Dialog : MonoBehaviour
             nextLine.SetActive(false);
             StartCoroutine(EnablePlayerController());
             StartCoroutine(EnableCollider());
+            gameManager.dialoguing = false;
         }
     }
     IEnumerator EnablePlayerController()

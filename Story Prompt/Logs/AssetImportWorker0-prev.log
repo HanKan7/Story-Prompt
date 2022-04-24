@@ -1,194 +1,123 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.22f1 (e1a7f79fd887) revision 14788599'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 22000.613; Version 2009; 64bit' Language: 'en' Physical Memory: 16126 MB
+OS: 'Windows 10 Pro; OS build 19043.1645; Version 2009; 64bit' Language: 'zh' Physical Memory: 32679 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.22f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\Unity 2020.3.22f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-J:/GAME 270/Story-Prompt/Story Prompt
+D:/Game270/Story-Prompt/Story Prompt
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65076
-Successfully changed project path to: J:/GAME 270/Story-Prompt/Story Prompt
-J:/GAME 270/Story-Prompt/Story Prompt
+49476
+Successfully changed project path to: D:/Game270/Story-Prompt/Story Prompt
+D:/Game270/Story-Prompt/Story Prompt
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 64.35 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 54.20 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.22f1 (e1a7f79fd887)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path J:/GAME 270/Story-Prompt/Story Prompt/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/Unity 2020.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Game270/Story-Prompt/Story Prompt/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
     Vendor:   
-    VRAM:     6023 MB
-    Driver:   30.0.15.1215
+    VRAM:     8079 MB
+    Driver:   30.0.14.7168
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56952
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/Unity 2020.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/Unity 2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/Unity 2020.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56172
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001147 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/Unity 2020.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001350 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 84.24 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 56.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.785 seconds
+- Completed reload, in  0.714 seconds
 Domain Reload Profiling:
-	ReloadAssembly (786ms)
-		BeginReloadAssembly (33ms)
+	ReloadAssembly (714ms)
+		BeginReloadAssembly (37ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (396ms)
-			LoadAssemblies (32ms)
+		EndReloadAssembly (313ms)
+			LoadAssemblies (35ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (115ms)
+			SetupTypeCache (86ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (177ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (144ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (84ms)
-				BeforeProcessingInitializeOnLoad (14ms)
+				RefreshPlugins (57ms)
+				BeforeProcessingInitializeOnLoad (11ms)
 				ProcessInitializeOnLoadAttributes (55ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002288 seconds.
+Registered in 0.002216 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-00000239FB995030 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FCA42B50 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F706A4C0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FCA44060 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FCF7B010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F7044010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F7044010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FD07F040 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FB9CC240 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F71C1820 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FBEB8020 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FBEE6230 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F706A4C0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FBEE6230 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F71D1830 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F741CA20 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F6EACF70 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F71D1830 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FC3DC010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FCEBEC30 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FC1C3220 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FB79F010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FCEC3440 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F71D1830 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FC1C3220 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FC3C6620 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F76AF010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F722F650 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239FBB82020 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F1DB6270 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F6E61040 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F740D490 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F7431430 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000239F7257C60 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 70.25 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 55.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.850 seconds
+- Completed reload, in  0.758 seconds
 Domain Reload Profiling:
-	ReloadAssembly (850ms)
-		BeginReloadAssembly (108ms)
+	ReloadAssembly (759ms)
+		BeginReloadAssembly (92ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (698ms)
-			LoadAssemblies (60ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (627ms)
+			LoadAssemblies (58ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (210ms)
+			SetupTypeCache (179ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (309ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (281ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (70ms)
-				BeforeProcessingInitializeOnLoad (59ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				RefreshPlugins (56ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2360 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 106.2 MB.
+System memory in use before: 106.3 MB.
 System memory in use after: 106.4 MB.
 
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2795.
-Total: 2.578500 ms (FindLiveObjects: 0.174000 ms CreateObjectMapping: 0.042800 ms MarkObjects: 2.283000 ms  DeleteObjects: 0.077800 ms)
+Total: 2.710800 ms (FindLiveObjects: 0.194600 ms CreateObjectMapping: 0.072900 ms MarkObjects: 2.382800 ms  DeleteObjects: 0.059500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -197,143 +126,142 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Enemy/Walk/front/hero-walk-back-5.png
-  artifactKey: Guid(64f80afc761ed2b46ad14b77733ea5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/Walk/front/hero-walk-back-5.png using Guid(64f80afc761ed2b46ad14b77733ea5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81633ed134af5aa31d2072e024cf0a4e') in 0.065269 seconds 
-  Import took 0.068907 seconds .
+  path: Assets/Prefabs/Cameras.prefab
+  artifactKey: Guid(a1b0d126ef8627544afe08011d008516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cameras.prefab using Guid(a1b0d126ef8627544afe08011d008516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd76ccb9b7c1af1fa06be75009cfa77') in 0.044101 seconds 
+  Import took 0.047265 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Enemy/Walk/front/hero-walk-back-2.png
-  artifactKey: Guid(9fa0929d49e5c9347962ce341f460281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/Walk/front/hero-walk-back-2.png using Guid(9fa0929d49e5c9347962ce341f460281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81577b057f306a09259905bf7c76b9d7') in 0.007176 seconds 
-  Import took 0.010687 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Prefabs/Boss 1.prefab
-  artifactKey: Guid(52619a98623f06a4793407cd35f3e3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Boss 1.prefab using Guid(52619a98623f06a4793407cd35f3e3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08beda7586778ef98d2177f663644206') in 0.077779 seconds 
-  Import took 0.081294 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Enemy/Walk/front/hero-walk-back-3.png
-  artifactKey: Guid(6a46149171dece241a323816db2045d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/Walk/front/hero-walk-back-3.png using Guid(6a46149171dece241a323816db2045d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0059b1e42c087c4e73efc3c490de3958') in 0.009535 seconds 
-  Import took 0.012834 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Enemy/Walk/front/hero-walk-back-1.png
-  artifactKey: Guid(adc795ba9a16ba349b19785260ce9937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/Walk/front/hero-walk-back-1.png using Guid(adc795ba9a16ba349b19785260ce9937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6b7cc5727de0b58fafeb550d189f2e') in 0.010714 seconds 
-  Import took 0.014509 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Enemy/Walk/front/hero-walk-back-4.png
-  artifactKey: Guid(3cafd1d4a123ace4fb82f82fa8a74505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/Walk/front/hero-walk-back-4.png using Guid(3cafd1d4a123ace4fb82f82fa8a74505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1e2954dbc8b2d4ff6adb79fc8949fb') in 0.009678 seconds 
-  Import took 0.013102 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Enemy/Walk/front/hero-walk-back-6.png
-  artifactKey: Guid(05f487f9f32d4874d958e7867c45541b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/Walk/front/hero-walk-back-6.png using Guid(05f487f9f32d4874d958e7867c45541b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2900807b3f56a75fe9fa5c7b7ca166e4') in 0.006548 seconds 
-  Import took 0.010184 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.666555 seconds.
+  Time since last request: 0.000188 seconds.
   path: Assets/Prefabs/Arrow.prefab
   artifactKey: Guid(3bb3e78e461476c4192e63c150c5ee16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Arrow.prefab using Guid(3bb3e78e461476c4192e63c150c5ee16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8f7c5ab62dea22fc539b9b4ed6447c') in 0.011037 seconds 
-  Import took 0.014708 seconds .
+Start importing Assets/Prefabs/Arrow.prefab using Guid(3bb3e78e461476c4192e63c150c5ee16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8f7c5ab62dea22fc539b9b4ed6447c') in 0.040948 seconds 
+  Import took 0.043513 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Prefabs/enemy.prefab
-  artifactKey: Guid(6df018abe758f04449ab3733191cbc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/enemy.prefab using Guid(6df018abe758f04449ab3733191cbc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1c1472343fbfdcf4bb5f589bd98f26') in 0.011176 seconds 
-  Import took 0.015001 seconds .
+  Time since last request: 0.000127 seconds.
+  path: Assets/Prefabs/NPC.prefab
+  artifactKey: Guid(5092996c8e24e5d4ebb7c324347e7167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NPC.prefab using Guid(5092996c8e24e5d4ebb7c324347e7167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf3c6daf99f684b843f44c729221a53') in 0.063100 seconds 
+  Import took 0.066326 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Prefabs/Boss.prefab
-  artifactKey: Guid(afe0c6f41c6232e4493066cfe94450e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Boss.prefab using Guid(afe0c6f41c6232e4493066cfe94450e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '599091941552520884f2731116ed66f8') in 0.026841 seconds 
-  Import took 0.031453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/Prefabs/Circle.prefab
-  artifactKey: Guid(f00eae2389794ae4fb6919bbb748d729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Circle.prefab using Guid(f00eae2389794ae4fb6919bbb748d729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cbffe4cf23a859f88a43284ec79be05') in 0.009947 seconds 
-  Import took 0.013737 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.065673 seconds.
-  path: Assets/Prefabs/NPC 2.prefab
-  artifactKey: Guid(24a924c3e8b6e82459437e8912c32e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NPC 2.prefab using Guid(24a924c3e8b6e82459437e8912c32e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02da47d18b0bb1cfa0008d6283a0ae5f') in 0.020974 seconds 
-  Import took 0.024344 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.450093 seconds.
+  Time since last request: 0.000136 seconds.
   path: Assets/Prefabs/NPC 3.prefab
   artifactKey: Guid(fd0f636c77165c4498d19c43b70a0620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NPC 3.prefab using Guid(fd0f636c77165c4498d19c43b70a0620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe3a139da17f343b3e71b6edf336ab73') in 0.026289 seconds 
-  Import took 0.030223 seconds .
+Start importing Assets/Prefabs/NPC 3.prefab using Guid(fd0f636c77165c4498d19c43b70a0620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e615d15bdf094a6c2aa68a36db9127a') in 0.020638 seconds 
+  Import took 0.023607 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.258717 seconds.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Prefabs/Boss 1.prefab
+  artifactKey: Guid(52619a98623f06a4793407cd35f3e3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Boss 1.prefab using Guid(52619a98623f06a4793407cd35f3e3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa6c89c81f4018c04d682f05c1c06b0') in 0.020742 seconds 
+  Import took 0.023837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Prefabs/NPC 2.prefab
+  artifactKey: Guid(24a924c3e8b6e82459437e8912c32e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NPC 2.prefab using Guid(24a924c3e8b6e82459437e8912c32e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60d30ba699562d913110fbb51d6f1d67') in 0.020298 seconds 
+  Import took 0.023266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
   path: Assets/Prefabs/Player.prefab
   artifactKey: Guid(f7495962dc8ee2446b766b5f258b7db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(f7495962dc8ee2446b766b5f258b7db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '123f423e25247076a4b2686c3102fbf3') in 0.015550 seconds 
-  Import took 0.019117 seconds .
+Start importing Assets/Prefabs/Player.prefab using Guid(f7495962dc8ee2446b766b5f258b7db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '123f423e25247076a4b2686c3102fbf3') in 0.013767 seconds 
+  Import took 0.017026 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.957106 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/frog/frog1.png
-  artifactKey: Guid(249230eea0d1740f58df58df278ef6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/frog/frog1.png using Guid(249230eea0d1740f58df58df278ef6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c153c07430b0365687be29165d97412c') in 0.008463 seconds 
-  Import took 0.012530 seconds .
+  Time since last request: 0.000124 seconds.
+  path: Assets/Prefabs/enemy.prefab
+  artifactKey: Guid(6df018abe758f04449ab3733191cbc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/enemy.prefab using Guid(6df018abe758f04449ab3733191cbc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1c1472343fbfdcf4bb5f589bd98f26') in 0.008063 seconds 
+  Import took 0.011049 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/frog/frog2.png
-  artifactKey: Guid(ddc38c38551764f8abdc29ae04ca12b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/frog/frog2.png using Guid(ddc38c38551764f8abdc29ae04ca12b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '559b531f0c2ff47aa06ae283bfe1d178') in 0.009643 seconds 
-  Import took 0.013243 seconds .
+  Time since last request: 0.000131 seconds.
+  path: Assets/Prefabs/Boss.prefab
+  artifactKey: Guid(afe0c6f41c6232e4493066cfe94450e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Boss.prefab using Guid(afe0c6f41c6232e4493066cfe94450e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c76ff34e446563560b682d80a4009ec') in 0.022715 seconds 
+  Import took 0.025573 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.679250 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/frog/frog1.png
-  artifactKey: Guid(249230eea0d1740f58df58df278ef6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/frog/frog1.png using Guid(249230eea0d1740f58df58df278ef6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb5bcfef9f4c662212649fb5dec9afc') in 0.008328 seconds 
-  Import took 0.012345 seconds .
+  Time since last request: 0.000146 seconds.
+  path: Assets/Prefabs/Circle.prefab
+  artifactKey: Guid(f00eae2389794ae4fb6919bbb748d729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Circle.prefab using Guid(f00eae2389794ae4fb6919bbb748d729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cbffe4cf23a859f88a43284ec79be05') in 0.007552 seconds 
+  Import took 0.010784 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002004 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.647 seconds
+Domain Reload Profiling:
+	ReloadAssembly (647ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (526ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (176ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (208ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (140ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2331 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 107.1 MB.
+System memory in use after: 107.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2806.
+Total: 2.478600 ms (FindLiveObjects: 0.177900 ms CreateObjectMapping: 0.057900 ms MarkObjects: 2.222200 ms  DeleteObjects: 0.019800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

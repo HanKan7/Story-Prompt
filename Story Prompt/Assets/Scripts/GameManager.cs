@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     float spawnTimeCount = 0;
 
     public bool enemySpawning = false;
+    public bool dialoguing = false;
 
     void Start()
     {
@@ -22,9 +23,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemySpawning) {
-            SpawnEnemy();
-            
+        if (enemySpawning && ! dialoguing) {
+            SpawnEnemy();     
         }
 
 
