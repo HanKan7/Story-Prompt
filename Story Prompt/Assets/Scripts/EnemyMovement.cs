@@ -18,6 +18,7 @@ public class EnemyMovement : MonoBehaviour
     public int damage = 2;
 
     public GameObject targetBuilding;
+    
    
 
     // Start is called before the first frame update

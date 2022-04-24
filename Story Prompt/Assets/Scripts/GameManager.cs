@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     float spawnTimeCount = 0;
 
     public bool enemySpawning = false;
+
     void Start()
     {
 
@@ -25,6 +26,8 @@ public class GameManager : MonoBehaviour
             SpawnEnemy();
             
         }
+
+
     }
 
     void SpawnEnemy() {
