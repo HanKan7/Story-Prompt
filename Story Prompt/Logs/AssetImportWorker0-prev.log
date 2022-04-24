@@ -1,123 +1,194 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.22f1 (e1a7f79fd887) revision 14788599'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 22000.613; Version 2009; 64bit' Language: 'en' Physical Memory: 15792 MB
+OS: 'Windows 10 Home; OS build 22000.613; Version 2009; 64bit' Language: 'en' Physical Memory: 16126 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Hanu\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.22f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-H:/UCSC Projects/Game 270/Story Prompt/Story-Prompt/Story Prompt
+J:/GAME 270/Story-Prompt/Story Prompt
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54980
-Successfully changed project path to: H:/UCSC Projects/Game 270/Story Prompt/Story-Prompt/Story Prompt
-H:/UCSC Projects/Game 270/Story Prompt/Story-Prompt/Story Prompt
+63239
+Successfully changed project path to: J:/GAME 270/Story-Prompt/Story Prompt
+J:/GAME 270/Story-Prompt/Story Prompt
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 44.55 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 56.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.22f1 (e1a7f79fd887)
-[Subsystems] Discovering subsystems at path C:/Hanu/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path H:/UCSC Projects/Game 270/Story Prompt/Story-Prompt/Story Prompt/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path J:/GAME 270/Story-Prompt/Story Prompt/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3080 Laptop GPU (ID=0x249c)
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
     Vendor:   
-    VRAM:     8042 MB
-    Driver:   30.0.14.9649
+    VRAM:     6023 MB
+    Driver:   30.0.15.1215
 Initialize mono
-Mono path[0] = 'C:/Hanu/Editor/Data/Managed'
-Mono path[1] = 'C:/Hanu/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Hanu/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56920
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Hanu/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001020 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001061 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 39.67 ms, found 3 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 60.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.726 seconds
+- Completed reload, in  0.704 seconds
 Domain Reload Profiling:
-	ReloadAssembly (726ms)
-		BeginReloadAssembly (39ms)
+	ReloadAssembly (704ms)
+		BeginReloadAssembly (32ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (331ms)
-			LoadAssemblies (38ms)
+		EndReloadAssembly (327ms)
+			LoadAssemblies (31ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (106ms)
+			SetupTypeCache (97ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (19ms)
-			SetupLoadedEditorAssemblies (136ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (147ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (40ms)
-				BeforeProcessingInitializeOnLoad (12ms)
-				ProcessInitializeOnLoadAttributes (59ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
+				RefreshPlugins (60ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (54ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002300 seconds.
+Registered in 0.002040 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001DC76FFA010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7C2C9780 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7AD351B0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7C57E030 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7ACA7820 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7ACBAA30 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC76FC3560 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B1A99C0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B1F9230 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC77014820 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B835010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B2EF440 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B709C20 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B2EF440 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B1A99C0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC76BAE030 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC76AD24E0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B1A99C0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7BA4D010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B1A99C0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B01B010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7AEFD010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B874E30 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC76BAE030 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B975020 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B005430 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC768465D0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B975020 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B55CE20 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC714C6EB0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC764E5A60 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B9B1640 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B709C20 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B285430 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 40.20 ms, found 3 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 60.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.803 seconds
+- Completed reload, in  0.788 seconds
 Domain Reload Profiling:
-	ReloadAssembly (804ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (788ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (668ms)
-			LoadAssemblies (63ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (657ms)
+			LoadAssemblies (56ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (202ms)
+			SetupTypeCache (198ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (284ms)
+			SetupLoadedEditorAssemblies (286ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (40ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				RefreshPlugins (60ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2355 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 103.4 MB.
-System memory in use after: 103.6 MB.
+System memory in use before: 106.1 MB.
+System memory in use after: 106.3 MB.
 
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2790.
-Total: 2.906300 ms (FindLiveObjects: 0.248500 ms CreateObjectMapping: 0.051400 ms MarkObjects: 2.543300 ms  DeleteObjects: 0.062400 ms)
+Total: 2.628000 ms (FindLiveObjects: 0.156800 ms CreateObjectMapping: 0.057700 ms MarkObjects: 2.345100 ms  DeleteObjects: 0.067400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,78 +203,1213 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Hanu Scene.unity
-  artifactKey: Guid(0e93bcf09eadad54ca2af276ecb47977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Hanu Scene.unity using Guid(0e93bcf09eadad54ca2af276ecb47977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379748d1fd85e5c36b87dc96398bfff5') in 0.014534 seconds 
-  Import took 0.017637 seconds .
+  path: Assets/Forest & Cave/Top Down cave forest
+  artifactKey: Guid(29e14850fac2dab4691052f6d074ed84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest using Guid(29e14850fac2dab4691052f6d074ed84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8604c066ad94112ee04321ffd2869bac') in 0.013234 seconds 
+  Import took 0.017606 seconds .
 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 2.58 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 55.1 MB.
-System memory in use after: 55.3 MB.
+Received Import Request.
+  Time since last request: 0.114112 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/animals monsters.png
+  artifactKey: Guid(c602808eb35a33c4bb0df01e9944bd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/animals monsters.png using Guid(c602808eb35a33c4bb0df01e9944bd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc1edf1ed84309390439f349b9a09e24') in 0.079150 seconds 
+  Import took 0.082490 seconds .
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2790.
-Total: 3.039200 ms (FindLiveObjects: 0.237000 ms CreateObjectMapping: 0.050100 ms MarkObjects: 2.737800 ms  DeleteObjects: 0.013600 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/cave.png
+  artifactKey: Guid(0cf6edd09950bc946895eb4be69d5500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/cave.png using Guid(0cf6edd09950bc946895eb4be69d5500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c5cd172aa0f96ddaf841b4f9fed190') in 0.015016 seconds 
+  Import took 0.018658 seconds .
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/wm nature.png
+  artifactKey: Guid(483558a73459d9f4e8a2ccb70b579dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/wm nature.png using Guid(483558a73459d9f4e8a2ccb70b579dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b373bbb69a3407a70969534b7664f3') in 0.014487 seconds 
+  Import took 0.018140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/structure.png
+  artifactKey: Guid(97253533db14929429b2ff6e68a5f283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/structure.png using Guid(97253533db14929429b2ff6e68a5f283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2b0b6de94c8635d3e97159f223e010') in 0.011912 seconds 
+  Import took 0.015651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/houses 1.png
+  artifactKey: Guid(36ba31f38ae40be41afaba032b726150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/houses 1.png using Guid(36ba31f38ae40be41afaba032b726150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6a61f8f1164b15453ac5f17131bfb33') in 0.012752 seconds 
+  Import took 0.016625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/wm houses 2.png
+  artifactKey: Guid(bbfda7fef410b374f90b4f4ffc809627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/wm houses 2.png using Guid(bbfda7fef410b374f90b4f4ffc809627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b63630f83b55cbe01070345a8cb2b208') in 0.023501 seconds 
+  Import took 0.027334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/nature.png
+  artifactKey: Guid(7c576ad5e3d21904cb64917724ce7c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/nature.png using Guid(7c576ad5e3d21904cb64917724ce7c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af89ae958e31b9db0add84ed6632bd3') in 0.012923 seconds 
+  Import took 0.016805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/example 3.png
+  artifactKey: Guid(ec1f81a8b49fff542af434c8fe80b3f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/example 3.png using Guid(ec1f81a8b49fff542af434c8fe80b3f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f54627460b53e5e82cfcbf2a3739165e') in 0.011532 seconds 
+  Import took 0.015031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/ground.png
+  artifactKey: Guid(7171812323e050f4798199b6c253ff49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/ground.png using Guid(7171812323e050f4798199b6c253ff49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e3e3b624acbad347710e588e3b08f3f') in 0.011792 seconds 
+  Import took 0.015669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/wm people.png
+  artifactKey: Guid(6b150ce169d175f4494ecb22770151b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/wm people.png using Guid(6b150ce169d175f4494ecb22770151b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '644f88a3ea453a942eec7dd084cc47c7') in 0.010594 seconds 
+  Import took 0.014289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/people.png
+  artifactKey: Guid(471168a459a6ce84ab80745a647a9940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/people.png using Guid(471168a459a6ce84ab80745a647a9940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '643bc2255a455fa36024daeca6ac3fd8') in 0.011918 seconds 
+  Import took 0.016040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/example 2.png
+  artifactKey: Guid(8c2d5de4a8a4a16468a944efbd5da829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/example 2.png using Guid(8c2d5de4a8a4a16468a944efbd5da829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb22a6ccb8575d96eb2217f96dcd6627') in 0.012291 seconds 
+  Import took 0.015880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/houses 2.png
+  artifactKey: Guid(e8b3b4588285f3642b0a053204e91543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/houses 2.png using Guid(e8b3b4588285f3642b0a053204e91543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58d8c651d3def1affb237f9a911bf83f') in 0.011776 seconds 
+  Import took 0.015650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/wm cave.png
+  artifactKey: Guid(11c2d52d5eec99b4ba809061dfd9d0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/wm cave.png using Guid(11c2d52d5eec99b4ba809061dfd9d0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60bb7d488f8d3f2bd3289ad4d0b80459') in 0.011269 seconds 
+  Import took 0.015030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/wm ground.png
+  artifactKey: Guid(a02183ff9aa3fa54ab16aa36d2f4dc0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/wm ground.png using Guid(a02183ff9aa3fa54ab16aa36d2f4dc0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '413632d861b5ba83541080d95f0d8bd3') in 0.010925 seconds 
+  Import took 0.015503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/wm animals monsters.png
+  artifactKey: Guid(98485dced383dd4488bced0adae50bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/wm animals monsters.png using Guid(98485dced383dd4488bced0adae50bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f7819c388c7c5f65a33c724fd9e977') in 0.014248 seconds 
+  Import took 0.018139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/wm structure.png
+  artifactKey: Guid(b1b7a4d00ce5a4c41be0a12d79373e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/wm structure.png using Guid(b1b7a4d00ce5a4c41be0a12d79373e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58c8dd58cdb67d914ae463eddcb5b23') in 0.012637 seconds 
+  Import took 0.016298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/example 1.png
+  artifactKey: Guid(361dc081a1127bc47a5b5e3d544753f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/example 1.png using Guid(361dc081a1127bc47a5b5e3d544753f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60654ff976f2cc142a615e817d507968') in 0.011395 seconds 
+  Import took 0.015468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Forest & Cave/Top Down cave forest/wm houses 1.png
+  artifactKey: Guid(5446031404aeba04084e56eb9a8b5c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest & Cave/Top Down cave forest/wm houses 1.png using Guid(5446031404aeba04084e56eb9a8b5c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '026f60d4965d0ac89878225eb021f764') in 0.013181 seconds 
+  Import took 0.017444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.480992 seconds.
+  path: Assets/free-2d-monster-sprites/PNG
+  artifactKey: Guid(81e653847722c604c81b7d9f27fe2b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG using Guid(81e653847722c604c81b7d9f27fe2b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1fdb7c6de635685166d1c33b5829ec') in 0.005230 seconds 
+  Import took 0.009007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.008663 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1
+  artifactKey: Guid(788d6395b29595b4a985a9a3d4e4903c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1 using Guid(788d6395b29595b4a985a9a3d4e4903c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1eab133e281b860650e57481db790a') in 0.005889 seconds 
+  Import took 0.009539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.097550 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_000.png
+  artifactKey: Guid(ed2be44868ec8d2499f0fb41b330730b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_000.png using Guid(ed2be44868ec8d2499f0fb41b330730b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b5160a94082aa9df0b971f39241475c') in 0.019840 seconds 
+  Import took 0.023332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_001.png
+  artifactKey: Guid(cf89e40af8effbf49bb62f43c298e2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_001.png using Guid(cf89e40af8effbf49bb62f43c298e2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d4f7348a6361e3cb736af48bc14c43') in 0.015956 seconds 
+  Import took 0.019496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_005.png
+  artifactKey: Guid(60dee1d1b98446644911b44ed382d794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_005.png using Guid(60dee1d1b98446644911b44ed382d794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b6bf8bd37897aa51a6e0db9e3cf2b0') in 0.016040 seconds 
+  Import took 0.019654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_007.png
+  artifactKey: Guid(24158d65e82ce95498771df3d3f43492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_007.png using Guid(24158d65e82ce95498771df3d3f43492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba40bfe6d376ccc6bf46571624117582') in 0.016493 seconds 
+  Import took 0.020668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_002.png
+  artifactKey: Guid(c0aa02d65ba9c58439afa110f6216d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_002.png using Guid(c0aa02d65ba9c58439afa110f6216d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55007b90b02d7dcd67ef73c7c9b996f1') in 0.016687 seconds 
+  Import took 0.020357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_003.png
+  artifactKey: Guid(61136b468729d534da8d92557c207348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_003.png using Guid(61136b468729d534da8d92557c207348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad90a3bf882a5bbe33020ce2c0b322c') in 0.013716 seconds 
+  Import took 0.017541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_010.png
+  artifactKey: Guid(ed06a918ece476643abfdce9d4e8fdb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_010.png using Guid(ed06a918ece476643abfdce9d4e8fdb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba2af85ab40c20eaf9d03b7f24dc4fff') in 0.013539 seconds 
+  Import took 0.017360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_004.png
+  artifactKey: Guid(9403ae6655d56ce499c6a6f8931531b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_004.png using Guid(9403ae6655d56ce499c6a6f8931531b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd380c0b6d071a5c7c0d9448298be73c2') in 0.014626 seconds 
+  Import took 0.018492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_006.png
+  artifactKey: Guid(5fad10f7e5ef26f49a6b9fe19c3c4c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_006.png using Guid(5fad10f7e5ef26f49a6b9fe19c3c4c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '166ecc15f374e2c460194e7c8fdec19a') in 0.016676 seconds 
+  Import took 0.020459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_008.png
+  artifactKey: Guid(a4e2e2cfbf5d50d4fa9c94ab479835ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_008.png using Guid(a4e2e2cfbf5d50d4fa9c94ab479835ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c5510b7678d397863d86f487f21d1e4') in 0.013969 seconds 
+  Import took 0.017940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_009.png
+  artifactKey: Guid(79289f7306f652a4e935795bfb95ee8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/PNG/1/1_enemies_1_attack_009.png using Guid(79289f7306f652a4e935795bfb95ee8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49711d01014cd721d3d212e713a32003') in 0.017393 seconds 
+  Import took 0.021221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.432622 seconds.
+  path: Assets/free-2d-monster-sprites/EPS
+  artifactKey: Guid(729f77fd5fc01b64988435c4e512e322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-2d-monster-sprites/EPS using Guid(729f77fd5fc01b64988435c4e512e322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5e481f9dd7fd168677a06e3316acf65') in 0.006162 seconds 
+  Import took 0.010471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.460918 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack
+  artifactKey: Guid(af01bc81fdf89a94abf96fa0ba7a9225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack using Guid(af01bc81fdf89a94abf96fa0ba7a9225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2736176f095186577d6770d1fe2e6f7') in 0.004844 seconds 
+  Import took 0.008429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.079406 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/atlas.png
+  artifactKey: Guid(05437e8fed4437147b9d851d233c1bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/atlas.png using Guid(05437e8fed4437147b9d851d233c1bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '413a9ab4d3418817f363d1a2e12a2d9b') in 0.012478 seconds 
+  Import took 0.016405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.506299 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations
+  artifactKey: Guid(7f08eac2a9f517c40a85ddc294e1fa03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations using Guid(7f08eac2a9f517c40a85ddc294e1fa03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cfc4e06542999c959abc2c601415e30') in 0.006155 seconds 
+  Import took 0.009597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060882 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel01.png
+  artifactKey: Guid(5c102062967a8214784a571dd115c008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel01.png using Guid(5c102062967a8214784a571dd115c008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5bfaff4c72eb5d4af0ea058c99c90f') in 0.020139 seconds 
+  Import took 0.023724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board03.png
+  artifactKey: Guid(997995bba0ec54746a42164c0f6e48e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board03.png using Guid(997995bba0ec54746a42164c0f6e48e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2740daadbd75a0eb000a19a0d2e463e') in 0.013555 seconds 
+  Import took 0.017173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate02.png
+  artifactKey: Guid(dc6c7d2d221253d40b7094d936f1b1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate02.png using Guid(dc6c7d2d221253d40b7094d936f1b1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935de66f2d79b2f547de55bfab7b76e7') in 0.012773 seconds 
+  Import took 0.016461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate03.png
+  artifactKey: Guid(b357b421b8d22004eb7ae97bbd0e44e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate03.png using Guid(b357b421b8d22004eb7ae97bbd0e44e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '876026498424049529e9cefcc88230f5') in 0.013964 seconds 
+  Import took 0.017715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate01.png
+  artifactKey: Guid(1ec29295cf90cdf4194330fe4b3827f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate01.png using Guid(1ec29295cf90cdf4194330fe4b3827f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a781f737dc81b83067f0a31c02eaeda9') in 0.016514 seconds 
+  Import took 0.020168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board04.png
+  artifactKey: Guid(b5d3203ffc6555f4ca0994e14fa5fa86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board04.png using Guid(b5d3203ffc6555f4ca0994e14fa5fa86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b0eab205aa10636c63b5b0714f484d7') in 0.015207 seconds 
+  Import took 0.019027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel03.png
+  artifactKey: Guid(53476fb186275144d9ad2ef494d5c919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel03.png using Guid(53476fb186275144d9ad2ef494d5c919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be20b655711743a6372a87a14b71bb6') in 0.011041 seconds 
+  Import took 0.014924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-bridge.png
+  artifactKey: Guid(4bfaf888bf38d1e4a8760a24c4463fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-bridge.png using Guid(4bfaf888bf38d1e4a8760a24c4463fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000915e6e42e61190aa12663ea12859e') in 0.012912 seconds 
+  Import took 0.016751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel02.png
+  artifactKey: Guid(b01003aa3add81248ad96f28346d1977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel02.png using Guid(b01003aa3add81248ad96f28346d1977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441311531f3f097cb6769ab578240c41') in 0.016287 seconds 
+  Import took 0.020137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board02.png
+  artifactKey: Guid(3634f0976ae89ba4088913db7e8fbb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board02.png using Guid(3634f0976ae89ba4088913db7e8fbb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b235163f00dec33684a44f76ba1a400') in 0.012637 seconds 
+  Import took 0.016629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board01.png
+  artifactKey: Guid(96a1538e9ef0c554d9f87447b1a09163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board01.png using Guid(96a1538e9ef0c554d9f87447b1a09163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89c0f09a1a6c6e08c9ca5f26448e2eb1') in 0.009827 seconds 
+  Import took 0.014382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.332953 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-complete.png
+  artifactKey: Guid(92b9cc3b52add434a8ae0e797f57b0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-complete.png using Guid(92b9cc3b52add434a8ae0e797f57b0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fbfde05e6869cbb6036d5e715e72c43') in 0.010747 seconds 
+  Import took 0.014407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw01.png
+  artifactKey: Guid(04b9e5d48121ed24eac99e99940a08a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw01.png using Guid(04b9e5d48121ed24eac99e99940a08a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97842243e826f0991dd3e4fd98cf4260') in 0.013744 seconds 
+  Import took 0.017717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.645077 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw02.png
+  artifactKey: Guid(84109b0892e8e8245b3d85ac0ae0f6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw02.png using Guid(84109b0892e8e8245b3d85ac0ae0f6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '717c632310c989f959fa068e907917fa') in 0.020148 seconds 
+  Import took 0.024033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw03.png
+  artifactKey: Guid(3883983775abd7542a9c73c5b4402810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw03.png using Guid(3883983775abd7542a9c73c5b4402810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51683000b012fb5482e9889e9635b00') in 0.012066 seconds 
+  Import took 0.015434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015386 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw04.png
+  artifactKey: Guid(4ec1e7e02bc6ee34a8fcf8c8e722c2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw04.png using Guid(4ec1e7e02bc6ee34a8fcf8c8e722c2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1b5b6ac8faac11ef0d4dbca6dc7365') in 0.013730 seconds 
+  Import took 0.017322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw05.png
+  artifactKey: Guid(ce51c00acf568134ca512f798c9dbac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw05.png using Guid(ce51c00acf568134ca512f798c9dbac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f42ade4c93b4d65d03fc21943c863f4') in 0.012244 seconds 
+  Import took 0.015846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012974 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw06.png
+  artifactKey: Guid(6fe8f46a3a6f288488513391f1334e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw06.png using Guid(6fe8f46a3a6f288488513391f1334e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66abe586ff74740417880c3d6fec25d') in 0.011375 seconds 
+  Import took 0.014835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw07.png
+  artifactKey: Guid(9da2130d97113d344af7fc78c5c62d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw07.png using Guid(9da2130d97113d344af7fc78c5c62d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec7f69979c0c25370a44af815905726') in 0.011126 seconds 
+  Import took 0.014674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.794137 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw08.png
+  artifactKey: Guid(fff31232ccf95a447b2d03a0d107dac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw08.png using Guid(fff31232ccf95a447b2d03a0d107dac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6591f32b62a6bcf58cd554d55ad9dedf') in 0.018464 seconds 
+  Import took 0.022285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw09.png
+  artifactKey: Guid(aa097ad855c794d44974fc2f88bd5da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw09.png using Guid(aa097ad855c794d44974fc2f88bd5da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9821f8ac3bd7f426fa77fc17b7b4f5e5') in 0.012612 seconds 
+  Import took 0.016135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.319269 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw10.png
+  artifactKey: Guid(b778c5108a120f4489acd17cc8e73e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw10.png using Guid(b778c5108a120f4489acd17cc8e73e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f97c5c1447ea9eb9567378d83d40a35') in 0.020936 seconds 
+  Import took 0.024913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw11.png
+  artifactKey: Guid(7bff19b6a6ce48244b4af3a30304e739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw11.png using Guid(7bff19b6a6ce48244b4af3a30304e739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f387bc1df6f3a56f72ea46a29bd0b602') in 0.013053 seconds 
+  Import took 0.016767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw12.png
+  artifactKey: Guid(805bebd977a9bd44aac1cdad543a81d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw12.png using Guid(805bebd977a9bd44aac1cdad543a81d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdfcd25be733e86a1590fb4a92b630eb') in 0.013544 seconds 
+  Import took 0.017544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw13.png
+  artifactKey: Guid(14dfe4b439ce69c4a85b4e1d3c68caf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw13.png using Guid(14dfe4b439ce69c4a85b4e1d3c68caf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c54ae8a432600e198f1aab5bc23e070') in 0.015428 seconds 
+  Import took 0.019434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.186220 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw14.png
+  artifactKey: Guid(0dc14b11fe735bf40bc5c4961d21aab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw14.png using Guid(0dc14b11fe735bf40bc5c4961d21aab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e167801976ce9ed2d21f1bd28e6a522') in 0.016365 seconds 
+  Import took 0.020508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw15.png
+  artifactKey: Guid(5e6bf1f384cb1c34082115b878382df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw15.png using Guid(5e6bf1f384cb1c34082115b878382df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5151da6be1f79346970f47bc8f66b196') in 0.012155 seconds 
+  Import took 0.015865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw16.png
+  artifactKey: Guid(8167489577d5be0469625a41a5e00ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw16.png using Guid(8167489577d5be0469625a41a5e00ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37621c64881042990f4a0820b7ca63c') in 0.017615 seconds 
+  Import took 0.021278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw19.png
+  artifactKey: Guid(68c61e102be9ef342b29c566a24a94e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw19.png using Guid(68c61e102be9ef342b29c566a24a94e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a53a340f582b1e192035f102779063') in 0.015355 seconds 
+  Import took 0.019473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw18.png
+  artifactKey: Guid(7cf95a81ceab39645a1a8aac2c269892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw18.png using Guid(7cf95a81ceab39645a1a8aac2c269892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63fca0c9b5fce8ae9a3709b55aa06222') in 0.011921 seconds 
+  Import took 0.016305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw21.png
+  artifactKey: Guid(3e9f6b8215c786a4f9cb7ebb7db26039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw21.png using Guid(3e9f6b8215c786a4f9cb7ebb7db26039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b15d0766b0bb45f0d40c91025b0ada6e') in 0.012175 seconds 
+  Import took 0.016234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw20.png
+  artifactKey: Guid(a743ed34bfde905489c9184a73f8c03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw20.png using Guid(a743ed34bfde905489c9184a73f8c03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7f3825acf87105e82ad600dda2ec7a7') in 0.011839 seconds 
+  Import took 0.015716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw17.png
+  artifactKey: Guid(f87ff9358acd0bc4c8f320577a078b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw17.png using Guid(f87ff9358acd0bc4c8f320577a078b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceac890b22548213e517f2a8e2c41753') in 0.012165 seconds 
+  Import took 0.015995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.118770 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw22.png
+  artifactKey: Guid(d4973f2be6daa824c87eeaf1ab53b064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw22.png using Guid(d4973f2be6daa824c87eeaf1ab53b064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9ae30db401d94e446a3236467e7e12') in 0.011658 seconds 
+  Import took 0.015167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw23.png
+  artifactKey: Guid(423b3ddf073fff8479d33907cf3cebe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw23.png using Guid(423b3ddf073fff8479d33907cf3cebe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cde03c374f28e680c4408c52a1c66ff') in 0.009835 seconds 
+  Import took 0.013508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013852 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw24.png
+  artifactKey: Guid(8c608f8353d7b5543834f0204e2f98c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw24.png using Guid(8c608f8353d7b5543834f0204e2f98c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24524acd27d21eb0d384825ee309b87d') in 0.014262 seconds 
+  Import took 0.017933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence01.png
+  artifactKey: Guid(60aa56cb5c3372d479079dcf70c698bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence01.png using Guid(60aa56cb5c3372d479079dcf70c698bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1cd4956200a513a88ceffc58fa27877') in 0.009488 seconds 
+  Import took 0.013096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw25.png
+  artifactKey: Guid(e38730fa294cf5447b760be2d6f8d34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw25.png using Guid(e38730fa294cf5447b760be2d6f8d34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ef63f9c76f9f03435534a0cd0f3777') in 0.013244 seconds 
+  Import took 0.017127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence02.png
+  artifactKey: Guid(bcf07e48f63bf2349b81a807938c5902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence02.png using Guid(bcf07e48f63bf2349b81a807938c5902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03c6d398b082700cceb258802fa11f8') in 0.012085 seconds 
+  Import took 0.015924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.165569 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence03.png
+  artifactKey: Guid(6d0d98640c3d2f04b87c47251997af18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence03.png using Guid(6d0d98640c3d2f04b87c47251997af18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b231ea47d5d9440f2c4b518d3593d19') in 0.013264 seconds 
+  Import took 0.016793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence04.png
+  artifactKey: Guid(c6ca67c0ab7f9c943a5617ee6e82a13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence04.png using Guid(c6ca67c0ab7f9c943a5617ee6e82a13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5e4527dc124901b07668445a008cdd6') in 0.012599 seconds 
+  Import took 0.016344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence06.png
+  artifactKey: Guid(1b5fc88068815ed41a232dd1483697aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence06.png using Guid(1b5fc88068815ed41a232dd1483697aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9487087f8df891e6707d4e8252e9bed3') in 0.012036 seconds 
+  Import took 0.015752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence05.png
+  artifactKey: Guid(3f0186b6b2ca3c54da97c94f200f607a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence05.png using Guid(3f0186b6b2ca3c54da97c94f200f607a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d5cf1629a52e86d7755e8b00f46f84') in 0.013215 seconds 
+  Import took 0.016842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence07.png
+  artifactKey: Guid(bcfcda58d7ed197408f749cf35bd7301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence07.png using Guid(bcfcda58d7ed197408f749cf35bd7301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa95d469f003674908098c5e86725fa') in 0.009759 seconds 
+  Import took 0.013396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence08.png
+  artifactKey: Guid(3d95ff1a0ede7f74aae5c56c8e453dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence08.png using Guid(3d95ff1a0ede7f74aae5c56c8e453dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01e5102f2f61f6a93388dc189ac49ad') in 0.011694 seconds 
+  Import took 0.015771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.200611 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence09.png
+  artifactKey: Guid(e479f6fd6b4ebff49aa55b11181603ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence09.png using Guid(e479f6fd6b4ebff49aa55b11181603ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc11f25da2a8dc5405847726fcca5545') in 0.012011 seconds 
+  Import took 0.015789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence10.png
+  artifactKey: Guid(d34566f9a8f76904aa80ad6e27c4d713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence10.png using Guid(d34566f9a8f76904aa80ad6e27c4d713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b46a28769b74021117fffecbfa41681') in 0.021157 seconds 
+  Import took 0.024864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence11.png
+  artifactKey: Guid(cef60cf5a8e92c04ca3a1ed714ce9242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence11.png using Guid(cef60cf5a8e92c04ca3a1ed714ce9242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b21d66f8bec3e4a77fe3dd87431625') in 0.016301 seconds 
+  Import took 0.020986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence13.png
+  artifactKey: Guid(bcb5ddfa4efd28b41ae14165fc10cf61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence13.png using Guid(bcb5ddfa4efd28b41ae14165fc10cf61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce01315120a4e424879559cf4eefc6e') in 0.015352 seconds 
+  Import took 0.018883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence14.png
+  artifactKey: Guid(9271dbdb8a575d5499a5a27a27d9e7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence14.png using Guid(9271dbdb8a575d5499a5a27a27d9e7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab535c8d0436866895788558810d75b1') in 0.009949 seconds 
+  Import took 0.013678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence12.png
+  artifactKey: Guid(f7cd9d0b2def8fd4c980ae821fc343f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence12.png using Guid(f7cd9d0b2def8fd4c980ae821fc343f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c7e967cef5e72841dc86213b6247c7') in 0.013883 seconds 
+  Import took 0.017720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.032750 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fish01.png
+  artifactKey: Guid(ca4a9f6053fbd794fade40407a84a5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fish01.png using Guid(ca4a9f6053fbd794fade40407a84a5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ced501dbf39fdd21c8487325654705b') in 0.011565 seconds 
+  Import took 0.016069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fish02.png
+  artifactKey: Guid(c3e88f91597398c4e94e57312ab18b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fish02.png using Guid(c3e88f91597398c4e94e57312ab18b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e5d06b98cc89d7baa098e8de8967457') in 0.010236 seconds 
+  Import took 0.013770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013697 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fish03.png
+  artifactKey: Guid(1bd30d30c558fcb45adc7af579d00290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fish03.png using Guid(1bd30d30c558fcb45adc7af579d00290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1344e3c2563e45797ffe92948b088ccd') in 0.010471 seconds 
+  Import took 0.013993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-flower02.png
+  artifactKey: Guid(8d838fa080a2a964f901437695c48d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-flower02.png using Guid(8d838fa080a2a964f901437695c48d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a597f903428a8dc8802e68609381d37') in 0.009685 seconds 
+  Import took 0.013337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fish04.png
+  artifactKey: Guid(ae243bf86a6e5a54ba05f2938b30f5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fish04.png using Guid(ae243bf86a6e5a54ba05f2938b30f5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2960f43e47d82f85ca5582aa1a84b240') in 0.009487 seconds 
+  Import took 0.014223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-flowers.png
+  artifactKey: Guid(740108eddf63aeb4bb689b214c1e0919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-flowers.png using Guid(740108eddf63aeb4bb689b214c1e0919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7b74706e5e435e63c1e2f94454f188b') in 0.009591 seconds 
+  Import took 0.013229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-flower03.png
+  artifactKey: Guid(51304dff43c79b047a90b790311308f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-flower03.png using Guid(51304dff43c79b047a90b790311308f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f41a8da858fdb61f526a2d29b2f884f6') in 0.009458 seconds 
+  Import took 0.013520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-flower01.png
+  artifactKey: Guid(ca3c5d265d5bf8c449a53b086fd38b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-flower01.png using Guid(ca3c5d265d5bf8c449a53b086fd38b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c51bfeddc56daaae3091edba10642b5') in 0.009016 seconds 
+  Import took 0.012636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.173965 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-grass01.png
+  artifactKey: Guid(3d233ca9f2a6adf48b0f920cbf330f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-grass01.png using Guid(3d233ca9f2a6adf48b0f920cbf330f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5c0783f866820812d910a8f9818fec') in 0.013376 seconds 
+  Import took 0.017280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-house-inn.png
+  artifactKey: Guid(20b91ea10b11d954092a319199d4c8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-house-inn.png using Guid(20b91ea10b11d954092a319199d4c8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899797c41c33035011332653fc251c7c') in 0.011316 seconds 
+  Import took 0.015109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-grass02.png
+  artifactKey: Guid(7af18a14cb6e74a42b54feb5a6c1089d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-grass02.png using Guid(7af18a14cb6e74a42b54feb5a6c1089d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40811ce2a236dd382e35c14516cb8e9') in 0.009859 seconds 
+  Import took 0.013821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-loot02.png
+  artifactKey: Guid(b9fb6e88f08bbf042a58209664421692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-loot02.png using Guid(b9fb6e88f08bbf042a58209664421692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6986cef8a456386ae03cf78daf49fac7') in 0.010133 seconds 
+  Import took 0.014051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-loot03.png
+  artifactKey: Guid(b814a93e9b1db6c4d99b02666afe8de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-loot03.png using Guid(b814a93e9b1db6c4d99b02666afe8de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88c82af184fded65bd7796df822f8d37') in 0.010013 seconds 
+  Import took 0.014607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-loot01.png
+  artifactKey: Guid(4f05e67461ebdc7498c533e3b4e41a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-loot01.png using Guid(4f05e67461ebdc7498c533e3b4e41a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1efbf07642c3899b9b9a806198b0f5a') in 0.018893 seconds 
+  Import took 0.022454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.153986 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-loot04.png
+  artifactKey: Guid(5ada504583f6bb24189867d1f0876f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-loot04.png using Guid(5ada504583f6bb24189867d1f0876f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '695bb779fc1f31c8f8fa61ef6287580f') in 0.008939 seconds 
+  Import took 0.013302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-loot05.png
+  artifactKey: Guid(d5fffffee1066bf499bfac742d354df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-loot05.png using Guid(d5fffffee1066bf499bfac742d354df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c97a131f94729b375d1334e2852f844') in 0.009216 seconds 
+  Import took 0.012817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010674 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-mini-lake.png
+  artifactKey: Guid(3df67a6e62d9f274d910570f44525bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-mini-lake.png using Guid(3df67a6e62d9f274d910570f44525bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1376da74ec723d2fe8dbeaf141f23494') in 0.010868 seconds 
+  Import took 0.014609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock03.png
+  artifactKey: Guid(054daa0ee09cd87489c624baf3cb554a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock03.png using Guid(054daa0ee09cd87489c624baf3cb554a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2380e2c825cb183da78dd51316d4538') in 0.009527 seconds 
+  Import took 0.013313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock02.png
+  artifactKey: Guid(bc690b8b7b829964ea3e3657fd849202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock02.png using Guid(bc690b8b7b829964ea3e3657fd849202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b622058d3ed954fb4955a506b4794fe3') in 0.010297 seconds 
+  Import took 0.014172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock04.png
+  artifactKey: Guid(d785a40f70e99ca4bbc38ab9893b0377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock04.png using Guid(d785a40f70e99ca4bbc38ab9893b0377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '089cfd4a739577b33c973c78b295f3be') in 0.009595 seconds 
+  Import took 0.013518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock05.png
+  artifactKey: Guid(df2fd87eb324c95498d73d0b362d3bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock05.png using Guid(df2fd87eb324c95498d73d0b362d3bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a0264800fcda5bdb8fdfc0554f2129') in 0.010665 seconds 
+  Import took 0.014784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock01.png
+  artifactKey: Guid(873d8808631881d4ea741df55f206b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock01.png using Guid(873d8808631881d4ea741df55f206b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a3de7e3b237ad186b0f29cd7db9256c') in 0.009982 seconds 
+  Import took 0.013715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.453902 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock06.png
+  artifactKey: Guid(d163ba7d7b6be334f82a0a7d924e7cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rock06.png using Guid(d163ba7d7b6be334f82a0a7d924e7cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ecf48f6d74b695409703cc06e98ae6') in 0.018852 seconds 
+  Import took 0.022947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rod.png
+  artifactKey: Guid(4c79b66ddd0ad0a4e921b577311c32a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-rod.png using Guid(4c79b66ddd0ad0a4e921b577311c32a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '172c1f24a977b3987ce2544c6220f0d0') in 0.010319 seconds 
+  Import took 0.014496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.224349 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-trasure-open.png
+  artifactKey: Guid(72779c5fae53b72469e4207ac5eee9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-trasure-open.png using Guid(72779c5fae53b72469e4207ac5eee9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdbe227519e93d38202642652c0754f5') in 0.019302 seconds 
+  Import took 0.022834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-tree01.png
+  artifactKey: Guid(4724d03c3b3db444a9b2b2995ab82e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-tree01.png using Guid(4724d03c3b3db444a9b2b2995ab82e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929c89bbd31c62b8c33749a525b00988') in 0.010740 seconds 
+  Import took 0.014731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-treasure-closed.png
+  artifactKey: Guid(31e5c2a4a6a99e648b504fede6df4c14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-treasure-closed.png using Guid(31e5c2a4a6a99e648b504fede6df4c14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61cc720065c7a5c499a2cc241f8a2847') in 0.010303 seconds 
+  Import took 0.014542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-tree02.png
+  artifactKey: Guid(e32fd4681c093c44394807d1e91ddf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-tree02.png using Guid(e32fd4681c093c44394807d1e91ddf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14953a080456483a423bae5576dfaa28') in 0.009526 seconds 
+  Import took 0.013361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.207011 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/boss_bee.png
+  artifactKey: Guid(1820cec825fb8444589ea61e34bafb79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/boss_bee.png using Guid(1820cec825fb8444589ea61e34bafb79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7e00efe37a10019a03978fda7909a9') in 0.011276 seconds 
+  Import took 0.015593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/slime-orange.png
+  artifactKey: Guid(2e518635ee66a1d4b81e450e59a6d0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/slime-orange.png using Guid(2e518635ee66a1d4b81e450e59a6d0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c12c54d2fb58ee43d9b7b6802a8fbe') in 0.008733 seconds 
+  Import took 0.012132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/slime-blue.png
+  artifactKey: Guid(3be0f77c0d97263499ef964b2b810a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/slime-blue.png using Guid(3be0f77c0d97263499ef964b2b810a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76be6e105550a68f92dacce5377b96e9') in 0.020123 seconds 
+  Import took 0.023764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/fox-run.png
+  artifactKey: Guid(1b7e50a85d775c84eb75e94c0cc8af91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/fox-run.png using Guid(1b7e50a85d775c84eb75e94c0cc8af91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ada0bf093e73e2a18850ca9f25e47d81') in 0.011534 seconds 
+  Import took 0.015032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/slime-green.png
+  artifactKey: Guid(a0cf08581c28ab641979aad081e79806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/slime-green.png using Guid(a0cf08581c28ab641979aad081e79806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f17d3d9d7c3b483f0ccfdbdb9a0cb060') in 0.010482 seconds 
+  Import took 0.015313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/kobold-idle.png
+  artifactKey: Guid(9b4bec5b4b43678459fda981a5fe90d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/kobold-idle.png using Guid(9b4bec5b4b43678459fda981a5fe90d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33781f2c813b1519614abb73611c55a3') in 0.010550 seconds 
+  Import took 0.014220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/worm-run-idle.png
+  artifactKey: Guid(cf642a34306a32a45b426ae36b093f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/worm-run-idle.png using Guid(cf642a34306a32a45b426ae36b093f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e028fa0ad79476c2d9292cc195c2efbb') in 0.010985 seconds 
+  Import took 0.015099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.790612 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/chars/hat-guy
+  artifactKey: Guid(6eb601c954edcf647beed139ba76c5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/chars/hat-guy using Guid(6eb601c954edcf647beed139ba76c5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a72189e53078272bc7d56ecd38e1108') in 0.004470 seconds 
+  Import took 0.008256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.081558 seconds.
+  path: Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/chars/hat-guy/hat-guy.png
+  artifactKey: Guid(ca6cb3862c391024b81caf90f893780d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/chars/hat-guy/hat-guy.png using Guid(ca6cb3862c391024b81caf90f893780d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de01c25065adfec1051b85903635f96') in 0.022960 seconds 
+  Import took 0.026195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.842869 seconds.
+  path: Assets/microFantasy.v0.4/microFantasy.v0.4/characters
+  artifactKey: Guid(6d41c43f571c14d4580c9688eb30cac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/microFantasy.v0.4/microFantasy.v0.4/characters using Guid(6d41c43f571c14d4580c9688eb30cac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b66bc53c032d8a84336c335dfeb80afd') in 0.004718 seconds 
+  Import took 0.008735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.484269 seconds.
+  path: Assets/Prefabs/Arrow.prefab
+  artifactKey: Guid(3bb3e78e461476c4192e63c150c5ee16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Arrow.prefab using Guid(3bb3e78e461476c4192e63c150c5ee16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e799096f2b69cd56b92006101891989c') in 0.028168 seconds 
+  Import took 0.031846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Prefabs/Cameras.prefab
+  artifactKey: Guid(a1b0d126ef8627544afe08011d008516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cameras.prefab using Guid(a1b0d126ef8627544afe08011d008516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd76ccb9b7c1af1fa06be75009cfa77') in 0.017758 seconds 
+  Import took 0.021570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Prefabs/NPC.prefab
+  artifactKey: Guid(5092996c8e24e5d4ebb7c324347e7167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NPC.prefab using Guid(5092996c8e24e5d4ebb7c324347e7167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '916474094481db9be01fb371141eda02') in 0.055471 seconds 
+  Import took 0.058960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(f7495962dc8ee2446b766b5f258b7db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(f7495962dc8ee2446b766b5f258b7db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7b53a749ce71cee0369dc1bab405e9') in 0.014432 seconds 
+  Import took 0.018169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.017124 seconds.
+  path: Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png
+  artifactKey: Guid(3ac2b7f1d44cb7c42a0e38e8bb5907fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png using Guid(3ac2b7f1d44cb7c42a0e38e8bb5907fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ba4db397a3283a000cca47677ad887') in 0.011381 seconds 
+  Import took 0.015138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_32x32.png
+  artifactKey: Guid(785dafaf0800b874596dd627d77a5f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_32x32.png using Guid(785dafaf0800b874596dd627d77a5f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c69b09c3dae15e120e43a735d399f148') in 0.014884 seconds 
+  Import took 0.018450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_48x48.png
+  artifactKey: Guid(b9726c8f7e0c0c2458f723dbe1d802a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_48x48.png using Guid(b9726c8f7e0c0c2458f723dbe1d802a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b878a0e95267e46eeedd78c1344217a') in 0.025502 seconds 
+  Import took 0.029027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.927658 seconds.
+  path: Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png
+  artifactKey: Guid(3ac2b7f1d44cb7c42a0e38e8bb5907fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png using Guid(3ac2b7f1d44cb7c42a0e38e8bb5907fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e9b9eb0ee41e3dac3bd0b2c872436b4') in 0.014187 seconds 
+  Import took 0.018047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.923996 seconds.
+  path: Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png
+  artifactKey: Guid(3ac2b7f1d44cb7c42a0e38e8bb5907fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png using Guid(3ac2b7f1d44cb7c42a0e38e8bb5907fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e07cabeab4d3e592f10549460c953c') in 0.016349 seconds 
+  Import took 0.019947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.971167 seconds.
+  path: Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png
+  artifactKey: Guid(3ac2b7f1d44cb7c42a0e38e8bb5907fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png using Guid(3ac2b7f1d44cb7c42a0e38e8bb5907fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1bd63a4adf69086610f6a178bf516b') in 0.221131 seconds 
+  Import took 0.225145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.902519 seconds.
+  path: Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png
+  artifactKey: Guid(3ac2b7f1d44cb7c42a0e38e8bb5907fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_16x16.png using Guid(3ac2b7f1d44cb7c42a0e38e8bb5907fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d46961f32947a00cc9336e217e10886') in 0.183955 seconds 
+  Import took 0.187741 seconds .
+
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002162 seconds.
+Registered in 0.002238 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001DC76FFA010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DA805D5960 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B872820 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7684F2D0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DA80CBC010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC769D1010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DA80CBC010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7C7A9020 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DA80CBC010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DA80CBC010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7AC10080 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B2EF440 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC767F8650 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DA80CBC010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7AC37290 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7C576020 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DA802B0CA0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7AC37290 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC76784010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7AC37290 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B410010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7BB5B020 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC767F8650 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7AC37290 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B410010 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7C3D6890 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7684F2D0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7ACF79A0 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DA80D81070 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC714C5190 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC764E6160 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B8A1020 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DC7B872820 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001DA80D81070 doesn't match image J:\GAME 270\Story-Prompt\Story Prompt\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.745 seconds
+- Completed reload, in  0.698 seconds
 Domain Reload Profiling:
-	ReloadAssembly (746ms)
-		BeginReloadAssembly (99ms)
+	ReloadAssembly (699ms)
+		BeginReloadAssembly (82ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (604ms)
-			LoadAssemblies (65ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (578ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (205ms)
+			SetupTypeCache (201ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (235ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (220ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (157ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (149ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2326 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.1 MB.
-System memory in use after: 101.3 MB.
+System memory in use before: 107.3 MB.
+System memory in use after: 107.5 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2792.
-Total: 2.753900 ms (FindLiveObjects: 0.180100 ms CreateObjectMapping: 0.050000 ms MarkObjects: 2.506100 ms  DeleteObjects: 0.017000 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2981.
+Total: 2.726300 ms (FindLiveObjects: 0.183400 ms CreateObjectMapping: 0.061700 ms MarkObjects: 2.454200 ms  DeleteObjects: 0.025800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -216,4 +1422,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 42.886851 seconds.
+  path: Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_32x32.png
+  artifactKey: Guid(785dafaf0800b874596dd627d77a5f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_32x32.png using Guid(785dafaf0800b874596dd627d77a5f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef87d28bb78aa353acc34c094496b5a9') in 0.032440 seconds 
+  Import took 0.035866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.802124 seconds.
+  path: Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_32x32.png
+  artifactKey: Guid(785dafaf0800b874596dd627d77a5f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED/Serene_Village_32x32.png using Guid(785dafaf0800b874596dd627d77a5f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f90e2c236b4cbd06ed20230c86e8c796') in 0.299774 seconds 
+  Import took 0.303805 seconds .
+
