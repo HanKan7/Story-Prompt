@@ -20,7 +20,7 @@ public class Dialog : MonoBehaviour
     bool canDialogue = false;
     bool dialoguing = false;
     GameManager gameManager;
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {/*
         if(collision.gameObject.tag == "Player")
         {
@@ -31,8 +31,21 @@ public class Dialog : MonoBehaviour
             playerController.playerAnim.SetBool("Dialog", true);
             playerController.enabled = false;
         }*/
-        playerController = collision.gameObject.GetComponent<PlayerController>();
-        canDialogue = true;
+
+        if ((collision.gameObject.tag == "Player") && (Input.GetKeyDown(KeyCode.Space)))
+        {
+            playerController = collision.gameObject.GetComponent<PlayerController>();
+            playerController.moveVector = Vector3.zero;
+            playerController.playerAnim.SetBool("Dialog", true);
+            playerController.enabled = false;
+            playerController = collision.gameObject.GetComponent<PlayerController>();
+            canDialogue = true;
+            StartCoroutine(PrintDialog());
+            GetComponent<CapsuleCollider2D>().enabled = false;
+        }
+
+        //playerController = collision.gameObject.GetComponent<PlayerController>();
+        //canDialogue = true;
     }
 
     private void Start()
@@ -42,12 +55,17 @@ public class Dialog : MonoBehaviour
 
     private void Update()
     {
-        /*if(dialogText.text == dialogs[index])
+        if(dialogText.text == dialogs[index])
         {
             continueButton.SetActive(true);
-        }*/
+        }
 
-        if (canDialogue && !dialoguing && Input.GetKeyDown(KeyCode.Space))
+        if (dialogText.text == dialogs[index] && Input.GetKeyDown(KeyCode.Space))
+        {
+            NextSentence();
+        }
+
+        /* if (canDialogue && !dialoguing && Input.GetKeyDown(KeyCode.Space))
         {
             nextLine.SetActive(true);
             StartCoroutine(PrintDialog());
@@ -62,7 +80,9 @@ public class Dialog : MonoBehaviour
         if (dialoguing && Input.GetKeyDown(KeyCode.Space))
         {
             NextSentence();
-        }
+        }*/
+
+
     }
 
     IEnumerator PrintDialog()
