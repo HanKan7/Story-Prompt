@@ -9,6 +9,9 @@ public class Projectile : MonoBehaviour
     public float projectileSpeed = 5f;
     public float projectileTimer = 2f;
     public Vector3 moveVector;
+
+    public ParticleSystem destroyEffect;
+
     private void Start()
     {
         Invoke("DestroyProjectile", projectileTimer);
@@ -26,6 +29,16 @@ public class Projectile : MonoBehaviour
     void DestroyProjectile()
     {
         Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Instantiate(destroyEffect, collision.transform.position, Quaternion.identity);
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 
 }

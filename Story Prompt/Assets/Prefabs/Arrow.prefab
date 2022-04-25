@@ -101,7 +101,9 @@ MonoBehaviour:
   sprite: {fileID: 4858330281832024757}
   projectileSpeed: 25
   projectileTimer: 2
-  moveVector: {x: -1, y: 0, z: 0}
+  moveVector: {x: 0, y: 1, z: 0}
+  destroyEffect: {fileID: 7633313234266398082, guid: 02e90404a35f37340b08bbd215a6d02d,
+    type: 3}
 --- !u!61 &3419767988187624391
 BoxCollider2D:
   m_ObjectHideFlags: 0

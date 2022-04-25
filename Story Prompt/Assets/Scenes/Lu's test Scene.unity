@@ -1104,6 +1104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingHP: {fileID: 1325478541}
+  smoke: {fileID: 8311891975761968050, guid: c0c9284338ce96f4db1243159249196f, type: 3}
+  offsetVector: {x: 0, y: 0, z: 0}
   Maxhp: 20
 --- !u!61 &224686932
 BoxCollider2D:
@@ -2176,6 +2178,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingHP: {fileID: 1325478541}
+  smoke: {fileID: 8311891975761968050, guid: c0c9284338ce96f4db1243159249196f, type: 3}
+  offsetVector: {x: 0, y: 0, z: 0}
   Maxhp: 20
 --- !u!212 &396602413
 SpriteRenderer:

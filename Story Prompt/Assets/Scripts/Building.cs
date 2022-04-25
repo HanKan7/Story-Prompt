@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class Building : MonoBehaviour
 {
     public GameObject buildingHP;
+    public ParticleSystem smoke;
+    bool isSmokeInstantiated = false;
+    public Vector3 offsetVector;
     Image HPGage;
     public float Maxhp = 20;
     float hp;
@@ -14,6 +17,7 @@ public class Building : MonoBehaviour
     {
         HPGage = buildingHP.GetComponent<Image>();
         hp = Maxhp;
+        offsetVector = transform.lossyScale;
     }
 
     // Update is called once per frame
@@ -24,8 +28,18 @@ public class Building : MonoBehaviour
 
     public void takeDamage(int damage) {
         hp -= damage;
+        if(hp <= Maxhp/1.2f)
+        {
+            if (!isSmokeInstantiated)
+            {
+                isSmokeInstantiated = true;
+                GameObject smokeGameObject = Instantiate(smoke.gameObject, transform.position, smoke.transform.rotation);
+            }
+        }
         if (hp <= 0) {
             Destroy(gameObject);
         }
     }
+
+
 }
