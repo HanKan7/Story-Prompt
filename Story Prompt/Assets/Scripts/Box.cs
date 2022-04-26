@@ -17,7 +17,7 @@ public class Box : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moveDistance = GetComponent<SpriteRenderer>().bounds.size.x;
+        moveDistance = GetComponent<BoxCollider2D>().bounds.size.x;
         finalPosition.x = transform.position.x + pushesHorizontaly * moveDistance;
         finalPosition.y = transform.position.y + pushesVerticaly * moveDistance;
         Instantiate(destinyDetermination, finalPosition, Quaternion.identity);
