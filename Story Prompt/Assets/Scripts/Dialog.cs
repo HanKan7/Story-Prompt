@@ -19,6 +19,7 @@ public class Dialog : MonoBehaviour
 
     bool canDialogue = false;
     bool dialoguing = false;
+    public bool isBoss = false;
     GameManager gameManager;
     private void OnTriggerStay2D(Collider2D collision)
     {/*
@@ -32,16 +33,37 @@ public class Dialog : MonoBehaviour
             playerController.enabled = false;
         }*/
 
-        if ((collision.gameObject.tag == "Player") && (Input.GetKeyDown(KeyCode.Space)))
+        if ((collision.gameObject.tag == "Player"))
         {
-            playerController = collision.gameObject.GetComponent<PlayerController>();
-            playerController.moveVector = Vector3.zero;
-            playerController.playerAnim.SetBool("Dialog", true);
-            playerController.enabled = false;
-            playerController = collision.gameObject.GetComponent<PlayerController>();
-            canDialogue = true;
-            StartCoroutine(PrintDialog());
-            GetComponent<CapsuleCollider2D>().enabled = false;
+            if (isBoss)
+            {
+                if (!gameManager.talkedWithBossThisScene) {
+                    gameManager.talkedWithBossThisScene = true;
+                    playerController = collision.gameObject.GetComponent<PlayerController>();
+                    playerController.moveVector = Vector3.zero;
+                    playerController.playerAnim.SetBool("Dialog", true);
+                    playerController.enabled = false;
+                    playerController = collision.gameObject.GetComponent<PlayerController>();
+                    canDialogue = true;
+                    StartCoroutine(PrintDialog());
+                    GetComponent<CapsuleCollider2D>().enabled = false;
+                    gameManager.screen.transform.GetChild(1).gameObject.SetActive(true);
+                }
+
+            }
+            else {
+                if ((Input.GetKeyDown(KeyCode.Space))) {
+                    Debug.Log("I am talking");
+                    playerController = collision.gameObject.GetComponent<PlayerController>();
+                    playerController.moveVector = Vector3.zero;
+                    playerController.playerAnim.SetBool("Dialog", true);
+                    playerController.enabled = false;
+                    playerController = collision.gameObject.GetComponent<PlayerController>();
+                    canDialogue = true;
+                    StartCoroutine(PrintDialog());
+                    GetComponent<CapsuleCollider2D>().enabled = false;
+                }
+            }
         }
 
         //playerController = collision.gameObject.GetComponent<PlayerController>();
@@ -113,6 +135,10 @@ public class Dialog : MonoBehaviour
             dialoguing = false;
             canDialogue = false;
             nextLine.SetActive(false);
+            if (isBoss)
+            {
+                gameManager.screen.transform.GetChild(1).gameObject.SetActive(false);
+            }
             StartCoroutine(EnablePlayerController());
             StartCoroutine(EnableCollider());
             gameManager.dialoguing = false;
@@ -123,6 +149,7 @@ public class Dialog : MonoBehaviour
         yield return new WaitForSeconds(enablePlayerControllerTimer);
         playerController.enabled = true;
         playerController.playerAnim.SetBool("Dialog", false);
+
     }
 
 

@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 
     public bool enemySpawning = false;
     public bool dialoguing = false;
+    public bool talkedWithBossThisScene = false;
     
     public GameObject screen;
     GameObject mainCamera;
@@ -118,6 +119,7 @@ public class GameManager : MonoBehaviour
         enterEffecting = true;
         yield return new WaitForSeconds(sceneTransitionTime);
         enterEffecting = false;
+        talkedWithBossThisScene = false;
     }
 
     
