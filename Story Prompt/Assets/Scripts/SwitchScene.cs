@@ -46,13 +46,4 @@ public class SwitchScene : MonoBehaviour
         }
     }
 
-    /*
-    IEnumerator transScene() {
-        effecting = true;
-        yield return new WaitForSeconds(sceneTransitionTime);
-        effecting = false;
-        SceneManager.LoadScene(targetScene);
-
-    }*/
-
 }

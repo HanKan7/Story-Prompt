@@ -92,11 +92,13 @@ public class GameManager : MonoBehaviour
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         }
         
-        if (quiteEffecting && changingAlpha < 255) {
-            changingAlpha += blackingSpeed * Time.deltaTime;
+        if (quiteEffecting && changingAlpha < 255) //Entering scene
+        {
+            changingAlpha += blackingSpeed * Time.deltaTime; // 0 to 255
             Color tempColor = new Color(originalColor.r, originalColor.g, originalColor.b, changingAlpha);
             screen.transform.GetChild(0).gameObject.GetComponent<Image>().color = tempColor;
-        } else if (enterEffecting && changingAlpha > 0) {
+        } else if (enterEffecting && changingAlpha > 0) //Exiting the scene
+        {
             changingAlpha -= blackingSpeed * Time.deltaTime;
             Color tempColor = new Color(originalColor.r, originalColor.g, originalColor.b, changingAlpha);
             screen.transform.GetChild(0).gameObject.GetComponent<Image>().color = tempColor;
@@ -112,7 +114,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator transScene(int targetScene)
     {
-        quiteEffecting = true;
+        quiteEffecting = true; //exit animation
         yield return new WaitForSeconds(sceneTransitionTime);
         quiteEffecting = false;
         SceneManager.LoadScene(targetScene);
