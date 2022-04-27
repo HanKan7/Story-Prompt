@@ -2,3 +2,5 @@ Base path: 'C:/Hanu/Editor/Data', plugins path 'C:/Hanu/Editor/Data/PlaybackEngi
 Cmd: initializeCompiler
 
 Cmd: shutdown
+
+Quitting shader compiler process

@@ -8,7 +8,8 @@ public class SwitchScene : MonoBehaviour
 {
 
     public int targetScene = 1;
-    GameManager gameManeger;
+    public float transitionTime = 2;
+    SceneManagement sceneManager;
     //GameObject mainCamera;
 
     //bool effecting = false;
@@ -19,30 +20,16 @@ public class SwitchScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameManeger = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        //mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
-        //originalColor = gameManeger.screen.transform.GetChild(0).GetComponent<Image>().color;
+        sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagement>();
+
     }
 
     // Update is called once per frame
-    void Update()
-    {/*
-        if (effecting) {
-            mainCamera.GetComponent<RipplePostProcessor>().transitionRippleEffect();
-            changingAlpha += 0.5f * Time.deltaTime;
-            Color tempColor = new Color(originalColor.r, originalColor.g, originalColor.b, changingAlpha);
-            gameManeger.screen.transform.GetChild(0).gameObject.GetComponent<Image>().color = tempColor;
-        }*/
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player") {
-            /*SceneManager.LoadScene(targetScene);
-            gameManeger.GetComponent<GameManager>().enemySpawning = true;*/
-            //mainCamera.GetComponent<RipplePostProcessor>().RippleEffect();
-            //StartCoroutine(transScene());
-            gameManeger.changeScene(targetScene);
+            sceneManager.changeScene(targetScene, transitionTime);
         }
     }
 

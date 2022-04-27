@@ -21,6 +21,7 @@ public class Dialog : MonoBehaviour
     bool dialoguing = false;
     public bool isBoss = false;
     GameManager gameManager;
+    SceneManagement sceneManager;
     private void OnTriggerStay2D(Collider2D collision)
     {/*
         if(collision.gameObject.tag == "Player")
@@ -37,8 +38,8 @@ public class Dialog : MonoBehaviour
         {
             if (isBoss)
             {
-                if (!gameManager.talkedWithBossThisScene) {
-                    gameManager.talkedWithBossThisScene = true;
+                if (!sceneManager.talkedWithBossThisScene) {
+                    sceneManager.talkedWithBossThisScene = true;
                     playerController = collision.gameObject.GetComponent<PlayerController>();
                     playerController.moveVector = Vector3.zero;
                     playerController.playerAnim.SetBool("Dialog", true);
@@ -73,6 +74,7 @@ public class Dialog : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagement>();
     }
 
     private void Update()

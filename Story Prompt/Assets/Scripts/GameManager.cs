@@ -17,21 +17,23 @@ public class GameManager : MonoBehaviour
 
     public bool enemySpawning = false;
     public bool dialoguing = false;
-    public bool talkedWithBossThisScene = false;
+    //public bool talkedWithBossThisScene = false;
     
     public GameObject screen;
-    GameObject mainCamera;
+    public GameObject mainCamera;
     public float sceneTransitionTime = 2;
     public float blackingSpeed = 0.5f;
     Color originalColor;
     float changingAlpha = 0;
-    bool quiteEffecting = false;
-    bool enterEffecting = false;
+    public bool quiteEffecting = false;
+    public bool enterEffecting = false;
+    SceneManagement sceneManager;
 
     void Start()
     {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         originalColor = screen.transform.GetChild(0).GetComponent<Image>().color;
+        sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagement>();
     }
 
     private void Awake()
@@ -43,8 +45,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (mainCamera == null) {
+            mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        }
         if (quiteEffecting || enterEffecting) {
-            transitionEffect();
+            sceneManager.transitionEffect(screen, mainCamera);
         }
 
         if (enemySpawning) {
@@ -82,7 +87,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+    /*
     void transitionEffect() {
         if (mainCamera != null)
         {
@@ -124,7 +129,7 @@ public class GameManager : MonoBehaviour
         talkedWithBossThisScene = false;
     }
 
-    
+    */
 
 }
 
