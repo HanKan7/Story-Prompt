@@ -139,6 +139,7 @@ public class Dialog : MonoBehaviour
             nextLine.SetActive(false);
             if (isBoss)
             {
+                
                 gameManager.screen.transform.GetChild(1).gameObject.SetActive(false);
             }
             StartCoroutine(EnablePlayerController());

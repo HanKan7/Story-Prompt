@@ -21,14 +21,12 @@ public class SceneManagement : MonoBehaviour
         gameManager = GameObject.FindGameObjectWithTag("GameManager").gameObject.GetComponent<GameManager>();
     }
 
-    /*private void Update()
+    private void Update()
     {
-        if (quiteEffecting || enterEffecting) {
-            transitionEffect(screen, mainCamera);
+        if (Input.GetKeyDown(KeyCode.R)) {
+            changeScene(-1, 2);
         }
-
-
-    }*/
+    }
 
     public void GoToScene(int sceneNumber)
     {
@@ -89,7 +87,13 @@ public class SceneManagement : MonoBehaviour
         yield return new WaitForSeconds(sceneTransitionTime);
         gameManager.quiteEffecting = false;
         //SceneManager.LoadScene(targetScene);
-        GoToScene(targetScene);
+        if (targetScene < 0)
+        {
+            ReplayScene();
+        }
+        else {
+            GoToScene(targetScene);
+        }
         gameManager.enterEffecting = true;//enterAnimation
         yield return new WaitForSeconds(sceneTransitionTime);
         gameManager.enterEffecting = false;

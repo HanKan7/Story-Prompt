@@ -29,22 +29,51 @@ public class GameManager : MonoBehaviour
     public bool enterEffecting = false;
     SceneManagement sceneManager;
 
+    static GameManager gMInstance;
+    static GameObject screenInstance;
     void Start()
     {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         originalColor = screen.transform.GetChild(0).GetComponent<Image>().color;
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagement>();
+
     }
 
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(screen);
+        if (gMInstance == null)
+        {
+            gMInstance = this;
+        }
+        else
+        {
+            DestroyObject(gameObject);
+        }
+
+        if(screenInstance == null)
+        {
+            screenInstance = screen;
+        }
+        else
+        {
+            Destroy(screenInstance);
+
+        }
+
     }
+
+    
 
     // Update is called once per frame
     void Update()
     {
+        if(screenInstance == null)
+        {
+            screen = GameObject.Find("Screen");
+        }
+
         if (mainCamera == null) {
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         }
@@ -59,8 +88,6 @@ public class GameManager : MonoBehaviour
         if (enemySpawning && ! dialoguing && enemyCount < numberOfEnemies) {
             SpawnEnemy();     
         }
-
-
     }
 
     void SpawnEnemy() {
