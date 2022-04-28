@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 8735387688465851794}
   - component: {fileID: 8735387688465851797}
   - component: {fileID: 8735387688465851795}
-  - component: {fileID: 8735387688465851792}
+  - component: {fileID: 6916502879309405628}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -174,7 +174,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 8735387688984026556}
-  nextLine: {fileID: 0}
   typingSpeed: 0.075
   dialogs:
   - 'Boss: Hi How are you?'
@@ -183,9 +182,9 @@ MonoBehaviour:
   continueButton: {fileID: 8735387690291568898}
   enablePlayerControllerTimer: 0.5
   enableColliderTimer: 5
-  isBoss: 0
---- !u!70 &8735387688465851792
-CapsuleCollider2D:
+  isBoss: 1
+--- !u!60 &6916502879309405628
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -198,8 +197,23 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.75, y: 0.75}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 0.75, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.1875, y: 0.25}
+      - {x: -0.25, y: 0.21875}
+      - {x: -0.25, y: -0.25}
+      - {x: 0.25, y: -0.25}
+      - {x: 0.25, y: 0.125}
+      - {x: 0.15625, y: 0.25}
 --- !u!1 &8735387688580880062
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,14 +13,21 @@ public class Box : MonoBehaviour
     public int pushesHorizontaly;
     public int pushesVerticaly;
     public GameObject destinyDetermination;
+    GameObject circle;
     bool finished = false;
+
+    public Color colorOfTheBox;
+    public Color colorOfTheCircle;
     // Start is called before the first frame update
     void Start()
     {
         moveDistance = GetComponent<BoxCollider2D>().bounds.size.x;
         finalPosition.x = transform.position.x + pushesHorizontaly * moveDistance;
         finalPosition.y = transform.position.y + pushesVerticaly * moveDistance;
-        Instantiate(destinyDetermination, finalPosition, Quaternion.identity);
+        colorOfTheBox = GetComponent<SpriteRenderer>().color;
+        circle =  Instantiate(destinyDetermination, finalPosition, Quaternion.identity);
+        circle.transform.GetComponent<SpriteRenderer>().color = colorOfTheBox;
+        //circle.transform.GetComponent<SpriteRenderer>().color.a = 1.0f;
     }
 
     // Update is called once per frame
@@ -44,13 +51,20 @@ public class Box : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, destinyPositoin, speed * Time.deltaTime);
         }
-        else { 
+        else {
             moving = false;
-            if ((Vector2)transform.position == finalPosition) {
+            if ((Vector2)transform.position == finalPosition)
+            {
                 finished = true;
+                circle.SetActive(false);
             }
         }
 
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        Debug.Log(collision.gameObject.name);
     }
 
 }

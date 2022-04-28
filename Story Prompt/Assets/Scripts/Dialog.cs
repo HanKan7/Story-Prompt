@@ -7,7 +7,7 @@ public class Dialog : MonoBehaviour
 {
 
     public TextMeshProUGUI dialogText;
-    public GameObject nextLine;
+    //public GameObject nextLine;
     public float typingSpeed = 0.2f;
     public List<string> dialogs = new List<string>();
     public GameObject continueButton;
@@ -47,7 +47,7 @@ public class Dialog : MonoBehaviour
                     playerController = collision.gameObject.GetComponent<PlayerController>();
                     canDialogue = true;
                     StartCoroutine(PrintDialog());
-                    GetComponent<CapsuleCollider2D>().enabled = false;
+                    GetComponent<PolygonCollider2D>().enabled = false;
                     gameManager.screen.transform.GetChild(1).gameObject.SetActive(true);
                 }
 
@@ -136,14 +136,16 @@ public class Dialog : MonoBehaviour
             index = 0;
             dialoguing = false;
             canDialogue = false;
-            nextLine.SetActive(false);
+            //nextLine.SetActive(false);
             if (isBoss)
             {
                 
                 gameManager.screen.transform.GetChild(1).gameObject.SetActive(false);
             }
             StartCoroutine(EnablePlayerController());
-            StartCoroutine(EnableCollider());
+            if (!isBoss) { 
+                StartCoroutine(EnableCollider());
+            } 
             gameManager.dialoguing = false;
         }
     }

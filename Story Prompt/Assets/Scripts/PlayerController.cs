@@ -72,6 +72,7 @@ public class PlayerController : MonoBehaviour
     {
         PlayerMovementInput();
         transform.position += moveVector.normalized * playerSpeed * Time.deltaTime;
+        //GetComponent<Rigidbody2D>().velocity = moveVector.normalized * playerSpeed * Time.deltaTime * 50;
     }
 
     void PlayerShootInput()
@@ -106,6 +107,11 @@ public class PlayerController : MonoBehaviour
     void CreateParticles()
     {
         dustParticles.Play();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(transform.gameObject.name + "    " +  collision.gameObject.name);
     }
 
 }
