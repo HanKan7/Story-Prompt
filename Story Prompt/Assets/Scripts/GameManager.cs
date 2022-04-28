@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     SceneManagement sceneManager;
 
     static GameManager gMInstance;
-    static GameObject screenInstance;
+    //static GameObject screenInstance;
     void Start()
     {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
@@ -42,24 +42,14 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(screen);
+        //DontDestroyOnLoad(screen);
         if (gMInstance == null)
         {
             gMInstance = this;
         }
         else
         {
-            DestroyObject(gameObject);
-        }
-
-        if(screenInstance == null)
-        {
-            screenInstance = screen;
-        }
-        else
-        {
-            Destroy(screenInstance);
-
+            Destroy(gameObject);
         }
 
     }
@@ -69,11 +59,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(screenInstance == null)
-        {
-            screen = GameObject.Find("Screen");
-        }
-
         if (mainCamera == null) {
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         }

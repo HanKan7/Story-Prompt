@@ -10,7 +10,7 @@ public class Dialog : MonoBehaviour
     //public GameObject nextLine;
     public float typingSpeed = 0.2f;
     public List<string> dialogs = new List<string>();
-    public GameObject continueButton;
+    //public GameObject continueButton;
     int index = 0;
 
     PlayerController playerController;
@@ -20,6 +20,7 @@ public class Dialog : MonoBehaviour
     bool canDialogue = false;
     bool dialoguing = false;
     public bool isBoss = false;
+    bool talked = false;
     GameManager gameManager;
     SceneManagement sceneManager;
     private void OnTriggerStay2D(Collider2D collision)
@@ -46,6 +47,7 @@ public class Dialog : MonoBehaviour
                     playerController.enabled = false;
                     playerController = collision.gameObject.GetComponent<PlayerController>();
                     canDialogue = true;
+                    dialogText = gameManager.screen.transform.GetChild(1).GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
                     StartCoroutine(PrintDialog());
                     GetComponent<PolygonCollider2D>().enabled = false;
                     gameManager.screen.transform.GetChild(1).gameObject.SetActive(true);
@@ -79,14 +81,15 @@ public class Dialog : MonoBehaviour
 
     private void Update()
     {
-        if(dialogText.text == dialogs[index])
+        /*if(dialogText.text == dialogs[index])
         {
             continueButton.SetActive(true);
-        }
-
-        if (dialogText.text == dialogs[index] && Input.GetKeyDown(KeyCode.Space))
-        {
-            NextSentence();
+        }*/
+        if (dialoguing) {
+            if (dialogText.text == dialogs[index] && Input.GetKeyDown(KeyCode.Space))
+            {
+                NextSentence();
+            }
         }
 
         /* if (canDialogue && !dialoguing && Input.GetKeyDown(KeyCode.Space))
@@ -122,7 +125,7 @@ public class Dialog : MonoBehaviour
 
     public void NextSentence()
     {
-        continueButton.SetActive(false);
+        //continueButton.SetActive(false);
         if (index < dialogs.Count - 1)
         {
             index++;
@@ -132,7 +135,7 @@ public class Dialog : MonoBehaviour
         else
         {
             dialogText.text = "";
-            continueButton.SetActive(false);
+            //continueButton.SetActive(false);
             index = 0;
             dialoguing = false;
             canDialogue = false;
@@ -147,6 +150,10 @@ public class Dialog : MonoBehaviour
                 StartCoroutine(EnableCollider());
             } 
             gameManager.dialoguing = false;
+            if (!talked) {
+                sceneManager.thingsDone += 1;
+                talked = true;
+            }
         }
     }
     IEnumerator EnablePlayerController()

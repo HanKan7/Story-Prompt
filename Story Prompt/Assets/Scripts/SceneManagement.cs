@@ -15,6 +15,8 @@ public class SceneManagement : MonoBehaviour
     //public GameObject mainCamera;
     public float blackingSpeed = 0.5f;
     public bool talkedWithBossThisScene = false;
+    public int thingsNeedToFinish = 2;
+    public int thingsDone = 0;
     private void Start()
     {
         currentSceneNumber = SceneManager.GetActiveScene().buildIndex;

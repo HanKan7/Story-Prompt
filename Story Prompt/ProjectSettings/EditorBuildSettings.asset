@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Hanu Scene.unity
-    guid: 0e93bcf09eadad54ca2af276ecb47977
-  - enabled: 1
-    path: Assets/Scenes/Lu's test Scene.unity
-    guid: ad467958b78c5f44fb5cc606ab28a9b0
-  - enabled: 0
     path: Assets/Scenes/Jai Scene 1.unity
     guid: 7d2786c81e8687842bd7cb11e24d5d71
+  - enabled: 1
+    path: Assets/Scenes/Crate Scene1.unity
+    guid: 2be1967de4313e743ba7ebf0afe5d2f0
+  - enabled: 1
+    path: Assets/Scenes/Jai Scene 2.unity
+    guid: 4b8c986322262584eb6f1c32977a83cc
+  - enabled: 1
+    path: Assets/Scenes/Crate Scene2.unity
+    guid: 132e877899b7562428c6de8300f6e24b
+  - enabled: 1
+    path: Assets/Scenes/Jai Scene 3.unity
+    guid: 7a34c04b0d1af6849905fd92350a6756
   m_configObjects: {}

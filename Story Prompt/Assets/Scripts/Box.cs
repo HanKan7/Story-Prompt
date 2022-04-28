@@ -18,9 +18,11 @@ public class Box : MonoBehaviour
 
     public Color colorOfTheBox;
     public Color colorOfTheCircle;
+    SceneManagement sceneManager;
     // Start is called before the first frame update
     void Start()
     {
+        sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagement>();
         moveDistance = GetComponent<BoxCollider2D>().bounds.size.x;
         finalPosition.x = transform.position.x + pushesHorizontaly * moveDistance;
         finalPosition.y = transform.position.y + pushesVerticaly * moveDistance;
@@ -57,6 +59,7 @@ public class Box : MonoBehaviour
             {
                 finished = true;
                 circle.SetActive(false);
+                sceneManager.thingsDone += 1;
             }
         }
 
