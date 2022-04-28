@@ -8867,12 +8867,12 @@ PrefabInstance:
     - target: {fileID: 2849895478917398877, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.035084844
+      value: -0.035075784
       objectReference: {fileID: 0}
     - target: {fileID: 2849895478917398877, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5619614
+      value: 0.56547856
       objectReference: {fileID: 0}
     - target: {fileID: 2849895479284084689, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
@@ -11848,6 +11848,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[0]
+      value: 'Boss: Don''t worry, I have devised a plan'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[1]
+      value: 'Boss: Just help the red base get up to speed...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[2]
+      value: 'Boss: and come meet me after that'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851796, guid: afe0c6f41c6232e4493066cfe94450e2,
         type: 3}

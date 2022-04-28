@@ -1863,12 +1863,12 @@ PrefabInstance:
     - target: {fileID: 2849895478917398877, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.97026
+      value: -3.970261
       objectReference: {fileID: 0}
     - target: {fileID: 2849895478917398877, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.930478
+      value: 4.9300303
       objectReference: {fileID: 0}
     - target: {fileID: 2849895479284084689, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
@@ -2088,7 +2088,7 @@ PrefabInstance:
     - target: {fileID: 2849895479766471631, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.967779
+      value: -3.9677792
       objectReference: {fileID: 0}
     - target: {fileID: 2849895479766471631, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
@@ -2103,7 +2103,7 @@ PrefabInstance:
     - target: {fileID: 2849895479940891918, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.2706692
+      value: -2.201639
       objectReference: {fileID: 0}
     - target: {fileID: 2849895479940891918, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
@@ -8497,6 +8497,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[0]
+      value: 'Boss: Looks like I have employed fools'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[1]
+      value: 'Boss: Can''''t you see the blue base is a mess'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[2]
+      value: 'Boss: I gotta come up with a plan to tackle these filthy rivals'
+      objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851796, guid: afe0c6f41c6232e4493066cfe94450e2,
         type: 3}
       propertyPath: m_Name
@@ -9320,7 +9335,7 @@ Transform:
   - {fileID: 1166890299}
   - {fileID: 2083360696}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1405236629 stripped
 Transform:
@@ -11305,7 +11320,7 @@ Transform:
   - {fileID: 632525148}
   - {fileID: 285516107}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1723017384
 PrefabInstance:

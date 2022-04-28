@@ -1843,6 +1843,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[0]
+      value: 'Boss: I cannot forgive you for letting those dirty rival hands on my
+        property'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[1]
+      value: 'Boss: I knew you would be a mistake'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[2]
+      value: '*kicks you out, literally*'
+      objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851796, guid: afe0c6f41c6232e4493066cfe94450e2,
         type: 3}
       propertyPath: m_Name
@@ -2216,12 +2232,12 @@ PrefabInstance:
     - target: {fileID: 2849895478917398877, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.025057971
+      value: -1.133353
       objectReference: {fileID: 0}
     - target: {fileID: 2849895478917398877, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.447006
+      value: -4.438988
       objectReference: {fileID: 0}
     - target: {fileID: 2849895479284084689, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}

@@ -1785,6 +1785,21 @@ PrefabInstance:
       propertyPath: dialogText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[0]
+      value: 'Boss: Stop wandering about, the rivals have jeopardized our factory'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[1]
+      value: 'Boss: Head over to the green base and get things in order'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
+        type: 3}
+      propertyPath: dialogs.Array.data[2]
+      value: 'Boss: RIGHT NOW!'
+      objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851796, guid: afe0c6f41c6232e4493066cfe94450e2,
         type: 3}
       propertyPath: m_Name
@@ -8683,12 +8698,12 @@ PrefabInstance:
     - target: {fileID: 2849895478917398877, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02803421
+      value: -0.028027654
       objectReference: {fileID: 0}
     - target: {fileID: 2849895478917398877, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4477832
+      value: 1.4464161
       objectReference: {fileID: 0}
     - target: {fileID: 2849895478917398878, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
@@ -8723,7 +8738,7 @@ PrefabInstance:
     - target: {fileID: 2849895479766471631, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.031091213
+      value: -0.031091332
       objectReference: {fileID: 0}
     - target: {fileID: 2849895479766471631, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
@@ -8738,7 +8753,7 @@ PrefabInstance:
     - target: {fileID: 2849895479940891918, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6660185
+      value: 1.7350488
       objectReference: {fileID: 0}
     - target: {fileID: 2849895479940891918, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
