@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 8735387688465851795}
   - component: {fileID: 8735387688465851792}
   - component: {fileID: 613905906636126023}
+  - component: {fileID: 5275960899286812657}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -429,6 +430,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &5275960899286812657
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8735387688465851796}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 042561a96fb90fc4b9ec26d308599878, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8735387688580880062
 GameObject:
   m_ObjectHideFlags: 0

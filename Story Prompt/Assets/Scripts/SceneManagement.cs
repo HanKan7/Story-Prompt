@@ -120,7 +120,8 @@ public class SceneManagement : MonoBehaviour
         {
             ReplayScene();
         }
-        else {
+        else 
+        {
             GoToScene(targetScene);
         }
         gameManager.enterEffecting = true;//enterAnimation
