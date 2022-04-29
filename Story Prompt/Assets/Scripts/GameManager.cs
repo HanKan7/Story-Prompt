@@ -71,8 +71,12 @@ public class GameManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        
+    {/*
+        if ((quiteEffecting || enterEffecting) && (changingAlpha >= 255 || changingAlpha <= 0)) {
+            quiteEffecting = false;
+            enterEffecting = false;
+        }*/
+
         if (mainCamera == null)
         {
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
@@ -81,10 +85,10 @@ public class GameManager : MonoBehaviour
         {
             sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagement>();
         }
-        if (quiteEffecting || enterEffecting)
+        /*if (quiteEffecting || enterEffecting)
         {
             sceneManager.transitionEffect(screen, mainCamera);
-        }
+        }*/
 
         if (enemySpawning)
         {

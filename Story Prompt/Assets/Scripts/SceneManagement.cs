@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class SceneManagement : MonoBehaviour
 {
     int currentSceneNumber;
-    public float changingAlpha = 0;
+    public float changingAlpha = 1;
     //bool quiteEffecting = false;
     //bool enterEffecting = false;
     GameManager gameManager;
@@ -47,6 +47,7 @@ public class SceneManagement : MonoBehaviour
             if (openGate != null && GameObject.Find("Gate").transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite != openGate) { 
                 GameObject.Find("Gate").transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = openGate;
                 openGateSound.Play();
+                gameManager.sceneManager = this;
             } 
         }
 
@@ -74,7 +75,7 @@ public class SceneManagement : MonoBehaviour
     {
         Color originalColor = screen.transform.GetChild(0).gameObject.GetComponent<Image>().color;
         //mainCamera.GetComponent<RipplePostProcessor>().transitionRippleEffect(changingAlpha * (1 / blackingSpeed));
-        if (mainCamera != null)
+        /*if (mainCamera != null)
         {
 
             // Debug.Log("MainCamera Found!");
@@ -83,16 +84,16 @@ public class SceneManagement : MonoBehaviour
         else
         {
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
-        }
+        }*/
         //////////////////////////////////////////////////////////////////
-        if (gameManager.quiteEffecting && changingAlpha < 255) //Entering scene
+        if (gameManager.quiteEffecting && changingAlpha < 254) //Entering scene
         {
             changingAlpha += blackingSpeed * Time.deltaTime; // 0 to 255
-            
+
             Color tempColor = new Color(originalColor.r, originalColor.g, originalColor.b, changingAlpha);
             screen.transform.GetChild(0).gameObject.GetComponent<Image>().color = tempColor;
         }
-        else if (gameManager.enterEffecting && changingAlpha > 0) //Exiting the scene
+        else if (gameManager.enterEffecting && changingAlpha > 1) //Exiting the scene
         {
             changingAlpha -= blackingSpeed * Time.deltaTime;
             Color tempColor = new Color(originalColor.r, originalColor.g, originalColor.b, changingAlpha);
@@ -103,8 +104,8 @@ public class SceneManagement : MonoBehaviour
 
     public void changeScene(int targetScene, float sceneTransitionTime)
     {
-        StartCoroutine(transScene(targetScene, sceneTransitionTime));
-
+        //StartCoroutine(transScene(targetScene, sceneTransitionTime));
+        GoToScene(targetScene);
     }
 
 
@@ -113,7 +114,7 @@ public class SceneManagement : MonoBehaviour
     IEnumerator transScene(int targetScene, float sceneTransitionTime)
     {
         gameManager.quiteEffecting = true; //exit animation
-        yield return new WaitForSeconds(sceneTransitionTime);
+        yield return new WaitForSeconds(0);
         gameManager.quiteEffecting = false;
         //SceneManager.LoadScene(targetScene);
         if (targetScene < 0)
@@ -125,7 +126,7 @@ public class SceneManagement : MonoBehaviour
             GoToScene(targetScene);
         }
         gameManager.enterEffecting = true;//enterAnimation
-        yield return new WaitForSeconds(sceneTransitionTime);
+        yield return new WaitForSeconds(0);
         gameManager.enterEffecting = false;
         //gameManager.talkedWithBossThisScene = false;
         

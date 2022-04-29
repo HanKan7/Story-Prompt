@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d743a47d23da8d458d0c30caf78f69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changingAlpha: 255
+  changingAlpha: 0
   blackingSpeed: 1
   talkedWithBossThisScene: 0
   thingsNeedToFinish: 2
