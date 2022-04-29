@@ -72,3 +72,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetScene: 1
   transitionTime: 2
+  finalScene: 0

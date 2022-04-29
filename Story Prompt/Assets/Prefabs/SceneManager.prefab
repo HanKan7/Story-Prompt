@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changingAlpha: 255
-  blackingSpeed: 0.5
+  blackingSpeed: 1
   talkedWithBossThisScene: 0
   thingsNeedToFinish: 2
   thingsDone: 0
