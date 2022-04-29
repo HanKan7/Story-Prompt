@@ -11,10 +11,12 @@ public class Projectile : MonoBehaviour
     public Vector3 moveVector;
 
     public ParticleSystem destroyEffect;
+    GameManager gameManager;
 
     private void Start()
     {
         Invoke("DestroyProjectile", projectileTimer);
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
     private void Update()
     {
@@ -38,6 +40,7 @@ public class Projectile : MonoBehaviour
             Instantiate(destroyEffect, collision.transform.position, Quaternion.identity);
             Destroy(gameObject);
             Destroy(collision.gameObject);
+            gameManager.enemyDestroyed += 1;
         }
     }
 

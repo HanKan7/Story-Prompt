@@ -451,6 +451,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 4906124766582343412, guid: cef3f2c0c3eca4c4db30e021efb10af2,
         type: 3}
+      propertyPath: blackingSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906124766582343412, guid: cef3f2c0c3eca4c4db30e021efb10af2,
+        type: 3}
       propertyPath: thingsNeedToFinish
       value: 3
       objectReference: {fileID: 0}

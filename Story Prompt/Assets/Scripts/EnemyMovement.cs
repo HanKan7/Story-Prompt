@@ -12,6 +12,7 @@ public class EnemyMovement : MonoBehaviour
     int targetNode = 1;
 
     bool attacking = false;
+    public bool returnToGate = false;
     public float timeBetweenAttack = 2;
     float attackTimeCount = 0;
 
@@ -37,7 +38,14 @@ public class EnemyMovement : MonoBehaviour
                 approachBuilding();
             }
             else {
-                attackBuilding();
+                if (!returnToGate)
+                {
+                    attackBuilding();
+                }
+                else {
+                    approachGate();
+                }
+                
             }
         }
     }
@@ -56,6 +64,24 @@ public class EnemyMovement : MonoBehaviour
             else
             {
                 attacking = true;
+            }
+        }
+    }
+
+    void approachGate() {
+        if (transform.position != path.transform.GetChild(targetNode).transform.position)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, path.transform.GetChild(targetNode).transform.position, speed * Time.deltaTime);
+        }
+        else
+        {
+            if (targetNode != 0)
+            {
+                targetNode--;
+            }
+            else
+            {
+                Destroy(gameObject);
             }
         }
     }

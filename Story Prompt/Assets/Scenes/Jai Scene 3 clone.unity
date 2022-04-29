@@ -12406,7 +12406,7 @@ PrefabInstance:
     - target: {fileID: 8530761569751099092, guid: 6b0dfdd8226547b42bbb0c9b1674fa99,
         type: 3}
       propertyPath: targetScene
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8530761569751099093, guid: 6b0dfdd8226547b42bbb0c9b1674fa99,
         type: 3}
@@ -12623,6 +12623,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300160, guid: 29c9cded5e558164aaf8c9bf08aa1510,
         type: 3}
+    - target: {fileID: 4906124766582343412, guid: cef3f2c0c3eca4c4db30e021efb10af2,
+        type: 3}
+      propertyPath: changingAlpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4906124766582343412, guid: cef3f2c0c3eca4c4db30e021efb10af2,
         type: 3}
       propertyPath: fightThisScene

@@ -12,12 +12,14 @@ public class Building : MonoBehaviour
     Image HPGage;
     public float Maxhp = 20;
     float hp;
+    GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
         HPGage = buildingHP.GetComponent<Image>();
         hp = Maxhp;
         offsetVector = transform.lossyScale;
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class Building : MonoBehaviour
         }
         if (hp <= 0) {
             Destroy(gameObject);
+            gameManager.buildingDestroyed += 1;
         }
     }
 

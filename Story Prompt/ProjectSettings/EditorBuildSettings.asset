@@ -32,4 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jai Scene 2 clone.unity
     guid: 42c5f26a0d15b8847a8505beb670aebb
+  - enabled: 1
+    path: Assets/Scenes/Jai Scene 4.unity
+    guid: 5bc4e954369345e44be7df1ccc817190
+  - enabled: 1
+    path: Assets/Scenes/Jai Scene 5.unity
+    guid: d9260acb7adcd1148b2f602a49e12ab1
+  - enabled: 1
+    path: Assets/Scenes/Jai Scene 5 clone.unity
+    guid: 0d367cbb5082e91479fad4532c7aade0
   m_configObjects: {}
