@@ -560,7 +560,8 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[2]
-      value: That too for those snobby land-snatchers...
+      value: You worked for the Petroleum Agency who snatched our lands and started
+        ruining it
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
@@ -570,7 +571,7 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[4]
-      value: ...
+      value: . . . . .
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
@@ -585,7 +586,12 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[7]
-      value: But you turned your back, I am ashamed of you little brother
+      value: You have been brainwashed, I am ashamed of you little brother
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
+        type: 3}
+      propertyPath: dialogs.Array.data[8]
+      value: You have been brainwashed, I am ashamed of you little brother
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851796, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}

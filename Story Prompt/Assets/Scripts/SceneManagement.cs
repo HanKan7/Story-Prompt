@@ -39,7 +39,14 @@ public class SceneManagement : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.R)) {
-            changeScene(-1, 2);
+            //changeScene(-1, 2);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if(currentSceneNumber == 1 || currentSceneNumber == 4 ||currentSceneNumber == 6)
+            {
+                ReplayScene();
+            }
+
+
         }
 
         if (thingsDone >= thingsNeedToFinish) 

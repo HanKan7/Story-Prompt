@@ -1023,27 +1023,32 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[0]
-      value: It's a nice remote place, I like it
+      value: 'Employee B: Hey there new fellow!'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[1]
-      value: I am not sure why the Boss chose this place...
+      value: 'B: Don''t you like this new location?'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[2]
-      value: We have a lot of rivals around, gotta stay alert
+      value: 'You: Sure, but what does this company do?'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[3]
-      value: 
+      value: 'B: Oh, you don''t know?!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
+        type: 3}
+      propertyPath: dialogs.Array.data[4]
+      value: 'B: We are PA, we help humans'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851796, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
@@ -8738,12 +8743,12 @@ PrefabInstance:
     - target: {fileID: 2849895478917398877, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02803421
+      value: -0.028063416
       objectReference: {fileID: 0}
     - target: {fileID: 2849895478917398877, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4477832
+      value: 1.4532268
       objectReference: {fileID: 0}
     - target: {fileID: 2849895478917398878, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
@@ -8778,7 +8783,7 @@ PrefabInstance:
     - target: {fileID: 2849895479766471631, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.031091213
+      value: -0.031091332
       objectReference: {fileID: 0}
     - target: {fileID: 2849895479766471631, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
@@ -8793,7 +8798,7 @@ PrefabInstance:
     - target: {fileID: 2849895479940891918, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6660185
+      value: 1.3911309
       objectReference: {fileID: 0}
     - target: {fileID: 2849895479940891918, guid: a1b0d126ef8627544afe08011d008516,
         type: 3}

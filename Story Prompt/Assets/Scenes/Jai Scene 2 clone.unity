@@ -1087,7 +1087,7 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[0]
-      value: I will let the boss know of your might help
+      value: 'K: I will let the boss know of your might help'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
@@ -4494,7 +4494,7 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[0]
-      value: Phew, that was close
+      value: 'B: Phew, that was close'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}

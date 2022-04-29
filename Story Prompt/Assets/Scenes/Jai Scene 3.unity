@@ -664,17 +664,22 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[0]
-      value: With this expansion, we will be market leaders
+      value: 'Employee M: With this expansion, we will be market leaders'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[1]
-      value: I don't care if it upsets a few faces.
+      value: 'M: I don''t care if it upsets a few faces.'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[2]
-      value: Afterall, it's an open market
+      value: 'M: Afterall, it''s an open market'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
+        type: 3}
+      propertyPath: dialogs.Array.data[3]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851796, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
@@ -4554,7 +4559,7 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[0]
-      value: Let's keep this momentum going!
+      value: 'K: Let''s keep this momentum going!'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
@@ -16030,17 +16035,17 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[0]
-      value: 'Man, suddenly are we the oldest employess '
+      value: 'B: Man, suddenly are we the oldest employess '
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[1]
-      value: Dang
+      value: 'B: Dang'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[2]
-      value: Wait a second, I think our boss is the oldest employee, nevermind...
+      value: 'B: Wait a second, I think our boss is the oldest employee, nevermind...'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}

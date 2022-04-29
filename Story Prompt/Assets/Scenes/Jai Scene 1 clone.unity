@@ -1023,17 +1023,17 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[0]
-      value: I appreciate the help! Cheers!
+      value: 'You: Why are these rivlas messing us up?'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[1]
-      value: nice
+      value: 'B: To put it plainly, they don''t like us helping people'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}

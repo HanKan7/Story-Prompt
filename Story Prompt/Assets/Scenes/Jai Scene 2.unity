@@ -1082,22 +1082,42 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[0]
-      value: Our company is growing!
+      value: 'Employee K: Our company is growing!'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[1]
-      value: Thanks to your efforts to halt these smug rivals
+      value: 'K: Thanks to your efforts to halt these smug rivals'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[2]
-      value: I swear they stoop too low
+      value: 'K: I swear they stoop too low'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
+        type: 3}
+      propertyPath: dialogs.Array.data[3]
+      value: 'You: What exactly do we do to help people?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
+        type: 3}
+      propertyPath: dialogs.Array.data[4]
+      value: 'K: Oh, we are PA'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
+        type: 3}
+      propertyPath: dialogs.Array.data[5]
+      value: 'K: Penicilin Association'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
+        type: 3}
+      propertyPath: dialogs.Array.data[6]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851796, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
@@ -4494,12 +4514,12 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[0]
-      value: Wohoo! I like this new direction the company has taken
+      value: 'B: Wohoo! I like this new direction the company has taken'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
       propertyPath: dialogs.Array.data[1]
-      value: I believe it's the land luck
+      value: 'B: I believe it''s the land luck'
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: 5092996c8e24e5d4ebb7c324347e7167,
         type: 3}
