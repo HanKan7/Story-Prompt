@@ -22,6 +22,9 @@ public class SceneManagement : MonoBehaviour
     public bool fightThisScene = false;
     public GameObject[] enemyPaths;
 
+    //Audio
+    [SerializeField] AudioSource openGateSound;
+
     private void Start()
     {
         currentSceneNumber = SceneManager.GetActiveScene().buildIndex;
@@ -39,9 +42,11 @@ public class SceneManagement : MonoBehaviour
             changeScene(-1, 2);
         }
 
-        if (thingsDone >= thingsNeedToFinish) {
+        if (thingsDone >= thingsNeedToFinish) 
+        {
             if (openGate != null && GameObject.Find("Gate").transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite != openGate) { 
                 GameObject.Find("Gate").transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = openGate;
+                openGateSound.Play();
             } 
         }
 

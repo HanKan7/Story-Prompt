@@ -17,6 +17,21 @@ public class SwitchScene : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if(targetScene == 9)
+        {
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().mainBGM.Stop();
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().fight.Play();
+        }
+
+        if(targetScene == 10)
+        {
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().fight.Stop();
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().bossConfrontation.Play();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player" && sceneManager.thingsDone >= sceneManager.thingsNeedToFinish) {

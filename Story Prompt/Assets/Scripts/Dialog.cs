@@ -54,8 +54,7 @@ public class Dialog : MonoBehaviour
                 }
 
             }
-            else {
-                if ((Input.GetKeyDown(KeyCode.Space))) {
+            else {              
                     Debug.Log("I am talking");
                     playerController = collision.gameObject.GetComponent<PlayerController>();
                     playerController.moveVector = Vector3.zero;
@@ -65,7 +64,7 @@ public class Dialog : MonoBehaviour
                     canDialogue = true;
                     StartCoroutine(PrintDialog());
                     GetComponent<CapsuleCollider2D>().enabled = false;
-                }
+                
             }
         }
 

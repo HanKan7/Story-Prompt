@@ -35,11 +35,20 @@ public class GameManager : MonoBehaviour
 
     static GameManager gMInstance;
     //static GameObject screenInstance;
+
+    //Audio Elements
+    public AudioSource mainBGM;
+    public AudioSource fight;
+    public AudioSource bossConfrontation;
+    public AudioSource realisation;
+
+
     void Start()
     {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         originalColor = screen.transform.GetChild(0).GetComponent<Image>().color;
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagement>();
+        mainBGM.Play();
 
     }
 
@@ -67,6 +76,10 @@ public class GameManager : MonoBehaviour
         if (mainCamera == null)
         {
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        }
+        if(sceneManager == null)
+        {
+            sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagement>();
         }
         if (quiteEffecting || enterEffecting)
         {

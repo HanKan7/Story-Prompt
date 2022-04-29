@@ -19,6 +19,8 @@ public class Box : MonoBehaviour
     public Color colorOfTheBox;
     public Color colorOfTheCircle;
     SceneManagement sceneManager;
+
+    public AudioSource crateReachDestination; 
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +62,7 @@ public class Box : MonoBehaviour
                 finished = true;
                 circle.SetActive(false);
                 sceneManager.thingsDone += 1;
+                crateReachDestination.Play();
             }
         }
 

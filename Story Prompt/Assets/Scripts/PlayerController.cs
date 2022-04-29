@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     #region Player Components
     [HideInInspector]
     public Animator playerAnim;
+    [SerializeField]AudioSource footSteps;
+    [SerializeField] AudioSource arrowShoot;
     #endregion
 
     #region Other Class Components
@@ -88,6 +90,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Time.time - shootingTimer > shootingDelay)
             {
+                arrowShoot.Play();
                 shootingTimer = Time.time;
                 projectile.moveVector = projectileMoveVector.normalized;
 
@@ -107,6 +110,19 @@ public class PlayerController : MonoBehaviour
     void CreateParticles()
     {
         dustParticles.Play();
+        if (!footSteps.isPlaying)
+        {
+            footSteps.Play();
+        }
+        //StartCoroutine(PlayFootSteps());
+    }
+
+    IEnumerator PlayFootSteps()
+    {
+        
+        yield return new WaitForSeconds(1f);
+        
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

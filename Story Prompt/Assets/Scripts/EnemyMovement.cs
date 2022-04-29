@@ -20,6 +20,9 @@ public class EnemyMovement : MonoBehaviour
 
     public GameObject targetBuilding;
     GameManager gameManager;
+
+    //Anim Variables
+    Animator anim;
    
 
     // Start is called before the first frame update
@@ -27,6 +30,7 @@ public class EnemyMovement : MonoBehaviour
     {
         //transform.position = pathNodes[0].position;
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -50,7 +54,10 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    void approachBuilding() {
+    void approachBuilding() 
+    {
+        HandleAnimation();
+
         if (transform.position != path.transform.GetChild(targetNode).transform.position)
         {
             transform.position = Vector2.MoveTowards(transform.position, path.transform.GetChild(targetNode).transform.position, speed * Time.deltaTime);
@@ -68,7 +75,9 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    void approachGate() {
+    void approachGate() 
+    {
+        HandleAnimation();
         if (transform.position != path.transform.GetChild(targetNode).transform.position)
         {
             transform.position = Vector2.MoveTowards(transform.position, path.transform.GetChild(targetNode).transform.position, speed * Time.deltaTime);
@@ -87,6 +96,8 @@ public class EnemyMovement : MonoBehaviour
     }
 
     void attackBuilding() {
+        SetAnimBoolsToFalse();
+        anim.SetBool("attack", true);
         if (attackTimeCount < timeBetweenAttack)
         {
             attackTimeCount += Time.deltaTime;
@@ -99,5 +110,47 @@ public class EnemyMovement : MonoBehaviour
 
         }
         
+    }
+
+    void HandleAnimation()
+    {
+        if (Mathf.Abs(transform.position.y - path.transform.GetChild(targetNode).transform.position.y) > Mathf.Abs(transform.position.x - path.transform.GetChild(targetNode).transform.position.x))
+        {
+            //UpDown
+            if (transform.position.y > path.transform.GetChild(targetNode).transform.position.y)
+            {
+                //Down Animation
+                SetAnimBoolsToFalse();
+                anim.SetBool("moveDown", true);
+            }
+            else
+            {
+                SetAnimBoolsToFalse();
+                anim.SetBool("moveUp", true);
+            }
+        }
+        else
+        {
+            if (transform.position.x > path.transform.GetChild(targetNode).transform.position.x)
+            {
+                //Down Animation
+                SetAnimBoolsToFalse();
+                anim.SetBool("moveLeft", true);
+            }
+            else
+            {
+                SetAnimBoolsToFalse();
+                anim.SetBool("moveRight", true);
+            }
+        }
+    }
+
+    void SetAnimBoolsToFalse()
+    {
+        anim.SetBool("moveRight", false);
+        anim.SetBool("moveLeft", false);
+        anim.SetBool("moveUp", false);
+        anim.SetBool("moveDown", false);
+        anim.SetBool("attack", false);
     }
 }
