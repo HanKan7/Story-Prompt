@@ -268,7 +268,7 @@ PrefabInstance:
     - target: {fileID: 4978357291534067198, guid: 50085b703ea98c4499034daf2bd4cd96,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4978357291534067198, guid: 50085b703ea98c4499034daf2bd4cd96,
         type: 3}
@@ -445,13 +445,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4906124766582343412, guid: cef3f2c0c3eca4c4db30e021efb10af2,
         type: 3}
+      propertyPath: openGate
+      value: 
+      objectReference: {fileID: 21300160, guid: 29c9cded5e558164aaf8c9bf08aa1510,
+        type: 3}
+    - target: {fileID: 4906124766582343412, guid: cef3f2c0c3eca4c4db30e021efb10af2,
+        type: 3}
       propertyPath: thingsNeedToFinish
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4906124766582343413, guid: cef3f2c0c3eca4c4db30e021efb10af2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4906124766582343413, guid: cef3f2c0c3eca4c4db30e021efb10af2,
         type: 3}
@@ -2466,7 +2472,7 @@ Transform:
   - {fileID: 1525780867}
   - {fileID: 76090002}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &933166583
 GameObject:
@@ -4442,7 +4448,7 @@ PrefabInstance:
     - target: {fileID: 4978357291534067198, guid: 50085b703ea98c4499034daf2bd4cd96,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4978357291534067198, guid: 50085b703ea98c4499034daf2bd4cd96,
         type: 3}
@@ -4810,7 +4816,7 @@ PrefabInstance:
     - target: {fileID: 3733028029612528294, guid: f7495962dc8ee2446b766b5f258b7db7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3733028029612528294, guid: f7495962dc8ee2446b766b5f258b7db7,
         type: 3}

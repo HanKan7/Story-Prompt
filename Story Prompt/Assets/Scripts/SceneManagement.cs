@@ -17,10 +17,20 @@ public class SceneManagement : MonoBehaviour
     public bool talkedWithBossThisScene = false;
     public int thingsNeedToFinish = 2;
     public int thingsDone = 0;
+    //Sprite Gate;
+    public Sprite openGate;
+    public bool fightThisScene = false;
+    public GameObject[] enemyPaths;
+
     private void Start()
     {
         currentSceneNumber = SceneManager.GetActiveScene().buildIndex;
         gameManager = GameObject.FindGameObjectWithTag("GameManager").gameObject.GetComponent<GameManager>();
+        //Gate = GameObject.Find("Gate").transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite;
+        if (fightThisScene) {
+            gameManager.enemySpawning = true;
+            gameManager.paths = enemyPaths;
+        }
     }
 
     private void Update()
@@ -28,6 +38,15 @@ public class SceneManagement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R)) {
             changeScene(-1, 2);
         }
+
+        if (thingsDone >= thingsNeedToFinish) {
+            if (openGate != null && GameObject.Find("Gate").transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite != openGate) { 
+                GameObject.Find("Gate").transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = openGate;
+            } 
+        }
+
+
+
     }
 
     public void GoToScene(int sceneNumber)
@@ -49,7 +68,7 @@ public class SceneManagement : MonoBehaviour
     public void transitionEffect(GameObject screen, GameObject mainCamera)
     {
         Color originalColor = screen.transform.GetChild(0).gameObject.GetComponent<Image>().color;
-        mainCamera.GetComponent<RipplePostProcessor>().transitionRippleEffect(changingAlpha * (1 / blackingSpeed));
+        //mainCamera.GetComponent<RipplePostProcessor>().transitionRippleEffect(changingAlpha * (1 / blackingSpeed));
         if (mainCamera != null)
         {
 
@@ -82,6 +101,9 @@ public class SceneManagement : MonoBehaviour
         StartCoroutine(transScene(targetScene, sceneTransitionTime));
 
     }
+
+
+
 
     IEnumerator transScene(int targetScene, float sceneTransitionTime)
     {

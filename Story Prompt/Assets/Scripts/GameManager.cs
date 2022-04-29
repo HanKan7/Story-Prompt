@@ -83,11 +83,6 @@ public class GameManager : MonoBehaviour
         else {
             for (int i = 0; i < paths.Length; i++) {
                 EnemyPaths path = paths[i].GetComponent<EnemyPaths>();
-                /*Vector3 spawnPoint = paths[i].enemyPath.transform.GetChild(0).transform.position;
-                GameObject tempEnemyPrefab = Instantiate(enemyPrefab, spawnPoint, Quaternion.identity);
-                EnemyMovement tempEnemy = tempEnemyPrefab.GetComponent<EnemyMovement>();
-                tempEnemy.path = paths[i].enemyPath;
-                tempEnemy.targetBuilding = paths[i].targetBuilding;*/
                 Vector3 spawnPoint = path.enemyPath.transform.GetChild(0).transform.position;
                 GameObject tempEnemyPrefab = Instantiate(enemyPrefab, spawnPoint, Quaternion.identity);
                 EnemyMovement tempEnemy = tempEnemyPrefab.GetComponent<EnemyMovement>();
