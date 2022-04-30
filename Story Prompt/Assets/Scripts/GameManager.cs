@@ -95,7 +95,7 @@ public class GameManager : MonoBehaviour
             paths = GameObject.FindGameObjectsWithTag("EnemyPath");
         }
 
-        if (enemySpawning && !dialoguing && enemyCount < numberOfEnemies)
+        if (enemySpawning && !dialoguing && enemyCount < numberOfEnemies && sceneManager.talkedWithBossThisScene)
         {
             SpawnEnemy();
         }
@@ -118,6 +118,7 @@ public class GameManager : MonoBehaviour
                     remainingEnemies[i].GetComponent<CapsuleCollider2D>().enabled = false;
                     remainingEnemies[i].GetComponent<EnemyMovement>().returnToGate = true;
                     badEnding = false;
+                    GameObject.Find("SceneTrigger").GetComponent<SwitchScene>().targetScene = 11;
                 }
             }
 

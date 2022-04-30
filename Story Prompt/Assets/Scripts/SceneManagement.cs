@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class SceneManagement : MonoBehaviour
 {
-    int currentSceneNumber;
+    public int currentSceneNumber;
     public float changingAlpha = 1;
     //bool quiteEffecting = false;
     //bool enterEffecting = false;

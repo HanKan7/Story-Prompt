@@ -16221,7 +16221,7 @@ PrefabInstance:
     - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
         type: 3}
       propertyPath: dialogs.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8735387688465851795, guid: afe0c6f41c6232e4493066cfe94450e2,
         type: 3}

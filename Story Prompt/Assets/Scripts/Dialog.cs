@@ -23,6 +23,8 @@ public class Dialog : MonoBehaviour
     bool talked = false;
     GameManager gameManager;
     SceneManagement sceneManager;
+
+    public GameObject endGame;
     private void OnTriggerStay2D(Collider2D collision)
     {/*
         if(collision.gameObject.tag == "Player")
@@ -51,6 +53,7 @@ public class Dialog : MonoBehaviour
                     StartCoroutine(PrintDialog());
                     GetComponent<PolygonCollider2D>().enabled = false;
                     gameManager.screen.transform.GetChild(1).gameObject.SetActive(true);
+                    gameManager.dialoguing = true;
                 }
 
             }
@@ -108,6 +111,10 @@ public class Dialog : MonoBehaviour
             NextSentence();
         }*/
 
+        if((sceneManager.currentSceneNumber == 10 || sceneManager.currentSceneNumber == 11) && (index >= dialogs.Count - 1))
+        {
+            endGame.gameObject.SetActive(true);
+        }
 
     }
 
